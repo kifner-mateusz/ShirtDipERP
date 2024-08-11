@@ -4,7 +4,7 @@ import type { Session, User } from "lucia";
 import { db } from "@shirterp/server";
 
 import { env } from "../env";
-import { sessions, users } from "@shirterp/service/schemas";
+import { sessions, users } from "@/service/schemas";
 import type { UserType } from "@shirterp/service/validators";
 
 const adapter = new DrizzlePostgreSQLAdapter(db, sessions, users);
