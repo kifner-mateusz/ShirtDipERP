@@ -1,6 +1,6 @@
 import { relations } from "drizzle-orm";
 import { integer, json, pgTable, serial, varchar } from "drizzle-orm/pg-core";
-import { metadata } from "@/server/db/_metadata";
+import { metadata } from "@/db/_metadata";
 import { orders } from "../order/schema/orders";
 import type { UniversalMatrix } from "@/components/Spreadsheet/useSpreadSheetData";
 

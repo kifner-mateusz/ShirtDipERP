@@ -3,11 +3,11 @@ import {
   employeeProcedure,
   createTRPCRouter,
   publicProcedure,
-} from "@/server/api/trpc";
+} from "@/api/trpc";
 
 import { users } from "../user/schema";
 import { eq } from "drizzle-orm";
-import { db } from "@/server/db";
+import { db } from "@/db";
 
 export const sessionRouter = createTRPCRouter({
   status: publicProcedure.query(({ ctx }) => {

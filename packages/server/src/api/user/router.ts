@@ -4,7 +4,7 @@ import {
   createTRPCRouter,
   employeeProcedure,
   managerProcedure,
-} from "@/server/api/trpc";
+} from "@/api/trpc";
 import { z } from "zod";
 import {
   createProcedureOldSearch,

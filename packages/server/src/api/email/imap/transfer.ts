@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
 import { env } from "@/env";
-import { files as filesSchema } from "@/server/api/file/schema";
-import { db } from "@/server/db";
+import { files as filesSchema } from "@/api/file/schema";
+import { db } from "@/db";
 import { genRandomStringServerOnly } from "@/utils/genRandomString";
 import { and, eq } from "drizzle-orm";
 import fsp from "fs/promises";

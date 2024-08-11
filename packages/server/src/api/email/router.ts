@@ -1,8 +1,8 @@
-import { db } from "@/server/db";
-import { users } from "@/server/api/user/schema";
-import { employeeProcedure, createTRPCRouter } from "@/server/api/trpc";
+import { db } from "@/db";
+import { users } from "@/api/user/schema";
+import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
 
-import IMAPService from "@/server/api/email/imap";
+import IMAPService from "@/api/email/imap";
 
 import { TRPCError } from "@trpc/server";
 import { eq } from "drizzle-orm";

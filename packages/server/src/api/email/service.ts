@@ -1,10 +1,10 @@
-import { type DBType, db } from "@/server/db";
-import { email_credentials } from "@/server/api/email/schema";
+import { type DBType, db } from "@/db";
+import { email_credentials } from "@/api/email/schema";
 import { eq, sql } from "drizzle-orm";
 import type {
   EmailCredential,
   UpdatedEmailCredential,
-} from "@/server/api/email/validator";
+} from "@/api/email/validator";
 import type { MetadataType } from "@/types/MetadataType";
 
 // compile query ahead of time

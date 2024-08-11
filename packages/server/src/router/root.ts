@@ -1,4 +1,4 @@
-import { createTRPCRouter } from "@/server/api/trpc";
+import { createTRPCRouter } from "@/api/trpc";
 
 import { addressRouter } from "./address/router";
 import { adminRouter } from "./admin/router";
@@ -7,9 +7,9 @@ import { emailRouter } from "./email/router";
 import { expenseRouter } from "./expense/router";
 import { fileRouter } from "./file/router";
 import { orderRouter } from "./order/router";
-import { productRouter } from "@/server/api/product/router";
+import { productRouter } from "@/api/product/router";
 import { searchRouter } from "./search/router";
-import { sessionRouter } from "@/server/api/session/router";
+import { sessionRouter } from "@/api/session/router";
 import { settingsRouter } from "./settings/router";
 import { spreadsheetRouter } from "./spreadsheet/router";
 import { userRouter } from "./user/router";

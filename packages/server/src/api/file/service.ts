@@ -1,7 +1,7 @@
-import { type DBType, db } from "@/server/db";
-import { files } from "@/server/api/file/schema";
+import { type DBType, db } from "@/db";
+import { files } from "@/api/file/schema";
 import { eq, sql } from "drizzle-orm";
-import type { File, NewFile, UpdatedFile } from "@/server/api/file/validator";
+import type { File, NewFile, UpdatedFile } from "@/api/file/validator";
 import type { MetadataType } from "@/types/MetadataType";
 import { baseUrl } from "./config";
 

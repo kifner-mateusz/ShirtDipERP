@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { expenses } from "@/server/api/expense/schema";
+import { expenses } from "@/api/expense/schema";
 import { insertExpenseZodSchema, updateExpenseZodSchema } from "./validator";
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
-} from "@/server/api/procedures";
-import { employeeProcedure, createTRPCRouter } from "@/server/api/trpc";
+} from "@/api/procedures";
+import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
 import expenseService from "./service";
 
 export const expenseRouter = createTRPCRouter({

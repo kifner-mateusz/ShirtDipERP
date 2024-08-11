@@ -1,11 +1,11 @@
-import { type DBType, db } from "@/server/db";
-import { addresses } from "@/server/api/address/schema";
-import { customers } from "@/server/api/customer/schema";
+import { type DBType, db } from "@/db";
+import { addresses } from "@/api/address/schema";
+import { customers } from "@/api/customer/schema";
 import type {
   Customer,
   CustomerWithRelations,
   UpdatedCustomer,
-} from "@/server/api/customer/validator";
+} from "@/api/customer/validator";
 import { eq, sql } from "drizzle-orm";
 import addressServices from "../../address/service";
 import type { MetadataType } from "@/types/MetadataType";

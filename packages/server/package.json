@@ -7,18 +7,6 @@
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./src/index.ts"
-    },
-    "./schemas": {
-      "types": "./dist/schemas.d.ts",
-      "default": "./src/schemas.ts"
-    },
-    "./services": {
-      "types": "./dist/services.d.ts",
-      "default": "./src/services.ts"
-    },
-    "./validators": {
-      "types": "./dist/validators.d.ts",
-      "default": "./src/validators.ts"
     }
   },
   "scripts": {
@@ -40,7 +28,10 @@
     "oslo": "1.2.1",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "zod": "3.23.8"
+    "zod": "3.23.8",
+    "drizzle-orm": "0.33.0",
+    "drizzle-zod": "0.5.1",
+    "postgres": "3.4.4"
   },
   "devDependencies": {
     "@shirterp/tsconfig": "workspace:*",

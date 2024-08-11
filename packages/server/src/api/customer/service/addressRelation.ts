@@ -1,4 +1,4 @@
-import { type DBType, db } from "@/server/db";
+import { type DBType, db } from "@/db";
 import { customers } from "../../customer/schema";
 import { eq, sql } from "drizzle-orm";
 import type { Address } from "../../address/validator";

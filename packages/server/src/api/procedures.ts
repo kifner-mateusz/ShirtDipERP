@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { db, type schemaType } from "@/server/db";
+import { db, type schemaType } from "@/db";
 import { asc, ilike, not, or, sql, desc, eq } from "drizzle-orm";
 import { employeeProcedure } from "./trpc";
 import { createInsertSchema } from "drizzle-zod";

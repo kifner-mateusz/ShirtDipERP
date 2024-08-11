@@ -1,4 +1,4 @@
-import { expenses } from "@/server/api/expense/schema";
+import { expenses } from "@/api/expense/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
 import idRequiredZodSchema from "@/types/idRequiredZodSchema";

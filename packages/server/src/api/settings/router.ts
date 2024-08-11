@@ -1,7 +1,7 @@
-import { db } from "@/server/db";
+import { db } from "@/db";
 import { email_credentials_to_users } from "../email/schema";
 import { insertEmailCredentialZodSchema } from "../email/validator";
-import { employeeProcedure, createTRPCRouter } from "@/server/api/trpc";
+import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
 import emailCredentialService from "../email/service";
 
 import { TRPCError } from "@trpc/server";

@@ -1,4 +1,4 @@
-import { type DBType, db } from "@/server/db";
+import { type DBType, db } from "@/db";
 import { products } from "./schema";
 import { eq, inArray, sql } from "drizzle-orm";
 import type { Product, UpdatedProduct } from "./validator";

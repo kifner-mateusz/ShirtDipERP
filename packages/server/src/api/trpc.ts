@@ -87,9 +87,9 @@ import { initTRPC } from "@trpc/server";
 import superjson from "superjson";
 import { ZodError } from "zod";
 
-import { db } from "@/server/db";
+import { db } from "@/db";
 import type { Session } from "@shirterp/auth";
-import { users } from "@/server/api/user/schema";
+import { users } from "@/api/user/schema";
 import { getSession } from "@shirterp/auth/react";
 
 const t = initTRPC.context<typeof createTRPCContext>().create({

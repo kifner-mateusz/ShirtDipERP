@@ -1,4 +1,4 @@
-import { type DBType, db } from "@/server/db";
+import { type DBType, db } from "@/db";
 import { global_properties } from "./schema";
 import { eq, sql } from "drizzle-orm";
 import type { MetadataType } from "@/types/MetadataType";

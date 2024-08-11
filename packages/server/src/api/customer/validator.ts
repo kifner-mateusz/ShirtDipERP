@@ -1,4 +1,4 @@
-import { customers } from "@/server/api/customer/schema";
+import { customers } from "@/api/customer/schema";
 import idRequiredZodSchema from "@/types/idRequiredZodSchema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";

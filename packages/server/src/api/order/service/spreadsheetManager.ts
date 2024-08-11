@@ -1,4 +1,4 @@
-import { type DBType, db } from "@/server/db";
+import { type DBType, db } from "@/db";
 import { spreadsheets } from "../../spreadsheet/schema";
 import { eq, sql } from "drizzle-orm";
 import spreadsheetService from "../../spreadsheet/service";
