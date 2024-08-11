@@ -1,7 +1,7 @@
 import { addresses } from "./schema";
 import { insertAddressZodSchema, updateAddressZodSchema } from "./validator";
-import { createProcedureGetAll } from "@/api/procedures";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+import { createProcedureGetAll } from "../procedures";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 import addressService from "./service";
 import { z } from "zod";
 

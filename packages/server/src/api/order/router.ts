@@ -7,7 +7,7 @@ import {
   insertOrderZodSchema,
   updateOrderZodSchema,
 } from "./validator";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 import {
   and,
   asc,
@@ -21,7 +21,7 @@ import {
   lte,
   inArray,
 } from "drizzle-orm";
-import { db } from "@/db";
+import { db } from "../../db";
 import orderService from "./service";
 import { orders_to_users } from "./schema";
 

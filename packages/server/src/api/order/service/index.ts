@@ -1,4 +1,4 @@
-import { type DBType, db } from "@/db";
+import { type DBType, db } from "../../../db";
 import { orders } from "../schema";
 import { eq, sql } from "drizzle-orm";
 import type {
@@ -6,7 +6,7 @@ import type {
   NewOrderWithRelationsByIds,
   UpdatedOrder,
 } from "../validator";
-import type { MetadataType } from "@/types/MetadataType";
+import type { MetadataType } from "../../../types/MetadataType";
 import addressService from "../../address/service";
 import spreadsheetService from "../../spreadsheet/service";
 import productRelation from "./productRelation";

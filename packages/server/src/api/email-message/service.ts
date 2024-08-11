@@ -1,13 +1,13 @@
-import { type DBType, db } from "@/db";
-import { email_messages } from "@/api/email-message/schema";
+import { type DBType, db } from "../../db";
+import { email_messages } from "../email-message/schema";
 import { eq, inArray, sql } from "drizzle-orm";
 import type {
   EmailMessage,
   UpdatedEmailMessage,
-} from "@/api/email-message/validator";
-import type { MetadataType } from "@/types/MetadataType";
-import { orders_to_email_messages } from "@/api/order/schema/orders_to_email_messages";
-import { email_messages_to_files } from "@/api/email-message/schema";
+} from "../email-message/validator";
+import type { MetadataType } from "../../types/MetadataType";
+import { orders_to_email_messages } from "../order/schema/orders_to_email_messages";
+import { email_messages_to_files } from "../email-message/schema";
 
 // compile query ahead of time
 const emailMessagePrepareGetById = db.query.email_messages

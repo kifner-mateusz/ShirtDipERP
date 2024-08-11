@@ -1,6 +1,6 @@
 import { timestamp, varchar, text } from "drizzle-orm/pg-core";
 
-import { pgTable } from "@/db/pgTable";
+import { pgTable } from "../../db/pgTable";
 import crypto from "node:crypto";
 import { sql } from "drizzle-orm";
 import { users } from "../user/schema";

@@ -1,7 +1,7 @@
-import { email_credentials } from "@/api/email/schema";
+import { email_credentials } from "../email/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import type { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 
 export const selectEmailCredentialZodSchema =
   createSelectSchema(email_credentials);

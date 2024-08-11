@@ -1,8 +1,8 @@
-import { type DBType, db } from "@/db";
+import { type DBType, db } from "../../db";
 import { products } from "./schema";
 import { eq, inArray, sql } from "drizzle-orm";
 import type { Product, UpdatedProduct } from "./validator";
-import type { MetadataType } from "@/types/MetadataType";
+import type { MetadataType } from "../../types/MetadataType";
 import { orders_to_products } from "../order/schema";
 
 // compile query ahead of time

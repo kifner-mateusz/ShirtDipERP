@@ -1,8 +1,8 @@
 import fs from "fs";
 import path from "path";
-import { files as filesSchema } from "@/api/file/schema";
-import { db } from "@/db";
-import { genRandomStringServerOnly } from "@/utils/genRandomString";
+import { files as filesSchema } from "../../file/schema";
+import { db } from "../../../db";
+import { genRandomStringServerOnly } from "../../../utils/genRandomString";
 import { and, eq } from "drizzle-orm";
 import fsp from "fs/promises";
 import imageSize from "image-size";

@@ -1,11 +1,11 @@
 import { relations } from "drizzle-orm";
 import { integer, pgTable, serial, varchar } from "drizzle-orm/pg-core";
-import { metadata } from "@/db/_metadata";
+import { metadata } from "../../db/_metadata";
 import {
   email_messages,
   email_messages_to_files,
-} from "@/api/email-message/schema";
-import { orders_to_files } from "@/api/order/schema";
+} from "../email-message/schema";
+import { orders_to_files } from "../order/schema";
 
 export const files = pgTable("files", {
   id: serial("id").primaryKey(),

@@ -1,8 +1,8 @@
-import { files } from "@/api/file/schema";
+import { files } from "../file/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
-import type { Merge } from "@/types/Merge";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
+import type { Merge } from "../../types/Merge";
 
 export const selectFileZodSchema = createSelectSchema(files).merge(
   z.object({ url: z.string() }),

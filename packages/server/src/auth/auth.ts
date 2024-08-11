@@ -1,11 +1,11 @@
 import { Lucia } from "lucia";
 import { DrizzlePostgreSQLAdapter } from "@lucia-auth/adapter-drizzle";
 import type { Session, User } from "lucia";
-import { db } from "@shirterp/server";
+import { db } from "../db";
 
 import { env } from "../env";
-import { sessions, users } from "@/service/schemas";
-import type { UserType } from "@shirterp/service/validators";
+import { sessions, users } from "../db/schemas";
+import type { User as UserType } from "../validators";
 
 const adapter = new DrizzlePostgreSQLAdapter(db, sessions, users);
 

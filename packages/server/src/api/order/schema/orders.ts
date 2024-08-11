@@ -8,7 +8,7 @@ import {
   serial,
   varchar,
 } from "drizzle-orm/pg-core";
-import { metadata } from "@/db/_metadata";
+import { metadata } from "../../../db/_metadata";
 import { addresses } from "../../address/schema";
 import { customers } from "../../customer/schema";
 import { orders_to_email_messages } from "./orders_to_email_messages";

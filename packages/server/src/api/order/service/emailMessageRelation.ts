@@ -1,5 +1,5 @@
-import { type DBType, db } from "@/db";
-import { orders_to_email_messages } from "@/api/order/schema/orders_to_email_messages";
+import { type DBType, db } from "../../../db";
+import { orders_to_email_messages } from "../schema/orders_to_email_messages";
 import { and, eq, inArray, sql } from "drizzle-orm";
 import { orders } from "../schema";
 import type { EmailMessage } from "../../email-message/validator";

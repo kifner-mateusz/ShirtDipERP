@@ -1,7 +1,7 @@
-import { email_messages } from "@/api/email-message/schema";
+import { email_messages } from "../email-message/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 
 export const selectEmailMessageZodSchema = createSelectSchema(email_messages, {
   headerLines: z.string().array(),

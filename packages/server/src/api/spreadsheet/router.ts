@@ -2,8 +2,8 @@
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
-} from "@/api/procedures";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+} from "../procedures";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 
 import { spreadsheets } from "../spreadsheet/schema";
 import {

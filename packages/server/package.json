@@ -11,30 +11,31 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch --preserveWatchOutput",
+    "dev": "tsc --preserveWatchOutput --watch",
     "clean": "rm -rf .turbo node_modules",
     "format": "biome format ./src",
     "lint": "biome lint ./src",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "@trpc/server": "11.0.0-rc.477",
-    "superjson": "2.2.1",
     "@lucia-auth/adapter-drizzle": "1.1.0",
-    "@t3-oss/env-nextjs": "0.11.0",
     "@shirterp/email-templates": "workspace:*",
+    "@t3-oss/env-nextjs": "0.11.0",
+    "@trpc/server": "11.0.0-rc.477",
+    "drizzle-orm": "0.33.0",
+    "drizzle-zod": "0.5.1",
     "lucia": "3.2.0",
     "next": "14.2.5",
     "oslo": "1.2.1",
+    "postgres": "3.4.4",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "zod": "3.23.8",
-    "drizzle-orm": "0.33.0",
-    "drizzle-zod": "0.5.1",
-    "postgres": "3.4.4"
+    "superjson": "2.2.1",
+    "zod": "3.23.8"
   },
   "devDependencies": {
     "@shirterp/tsconfig": "workspace:*",
+    "tsc-alias": "^1.8.10",
     "typescript": "5.5.4"
   }
 }

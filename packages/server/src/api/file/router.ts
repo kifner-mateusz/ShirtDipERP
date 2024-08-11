@@ -1,13 +1,13 @@
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
-} from "@/api/procedures";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+} from "../procedures";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 
-import { files } from "@/api/file/schema";
-import { updateFileZodSchema } from "@/api/file/validator";
+import { files } from "../file/schema";
+import { updateFileZodSchema } from "../file/validator";
 import { z } from "zod";
-import fileService from "@/api/file/service";
+import fileService from "../file/service";
 
 export const fileRouter = createTRPCRouter({
   getById: employeeProcedure

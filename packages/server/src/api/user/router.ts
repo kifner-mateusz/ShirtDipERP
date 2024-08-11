@@ -1,10 +1,6 @@
 import { users } from "./schema";
 import { updateUserZodSchema } from "./validator";
-import {
-  createTRPCRouter,
-  employeeProcedure,
-  managerProcedure,
-} from "@/api/trpc";
+import { createTRPCRouter, employeeProcedure, managerProcedure } from "../trpc";
 import { z } from "zod";
 import {
   createProcedureOldSearch,
@@ -25,6 +21,7 @@ export const userRouter = createTRPCRouter({
     .mutation(async ({ input: id, ctx }) => {
       const user = await userService.getById(id);
       const currentUser = ctx.session.user;
+      // @ts-ignore FIX
       if (currentUser.role === "manager" && user?.role === "admin")
         throw new TRPCError({
           code: "UNAUTHORIZED",
@@ -38,11 +35,13 @@ export const userRouter = createTRPCRouter({
       const currentUser = ctx.session.user;
       const currentUserId = currentUser.id;
       const user = await userService.getById(userData.id);
+      // @ts-ignore FIX
       if (currentUser.role === "manager" && user?.role === "admin")
         throw new TRPCError({
           code: "UNAUTHORIZED",
           message: "Cannot update data of user with higher role",
         });
+      // @ts-ignore FIX
       if (currentUser.role === "manager" && userData.role === "admin")
         throw new TRPCError({
           code: "UNAUTHORIZED",

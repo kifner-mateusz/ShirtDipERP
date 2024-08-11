@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { sendSignInEmail } from "@shirterp/email-templates";
-import { authService, userService } from "@/services";
+import { authService, userService } from "../services";
 import { generateIdFromEntropySize } from "lucia";
 import { lucia } from "./auth";
 
@@ -18,7 +18,8 @@ async function initiateSignIn(email: string | null) {
   let user = await userService.getByEmail(result.data);
   if ("error" in user) {
     const id = generateIdFromEntropySize(10);
-    user = await userService.create({ id: id, email: result.data });
+    // user = await userService.create({ id: id, email: result.data });
+    user = { error: "" };
     if ("error" in user) {
       return user;
     }

@@ -1,7 +1,7 @@
 import type { TRPCRouterRecord } from "@trpc/server";
 
-import { employeeProcedure, publicProcedure } from "@/api/trpc";
-import { magicLink, signOut } from "@/auth";
+import { employeeProcedure, publicProcedure } from "../api/trpc";
+import { magicLink, signOut } from "../auth";
 import { z } from "zod";
 
 export const authRouter = {

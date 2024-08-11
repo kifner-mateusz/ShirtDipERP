@@ -1,7 +1,7 @@
-import { expenses } from "@/api/expense/schema";
+import { expenses } from "../expense/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 
 export const selectExpenseZodSchema = createSelectSchema(expenses, {
   expenseData: z

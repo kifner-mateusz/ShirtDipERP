@@ -1,10 +1,10 @@
 import { z } from "zod";
 
-import { db, type schemaType } from "@/db";
+import { db, type schemaType } from "../db";
 import { asc, ilike, not, or, sql, desc, eq } from "drizzle-orm";
 import { employeeProcedure } from "./trpc";
 import { createInsertSchema } from "drizzle-zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../types/idRequiredZodSchema";
 
 export function createProcedureGetAll<T extends schemaType>(schema: T) {
   return employeeProcedure.query(async () => {

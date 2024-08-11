@@ -1,14 +1,14 @@
-import { customers } from "@/api/customer/schema";
+import { customers } from "../customer/schema";
 import {
   insertCustomerWithRelationZodSchema,
   updateCustomerZodSchema,
-} from "@/api/customer/validator";
+} from "../customer/validator";
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
-} from "@/api/procedures";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
-import customerService from "@/api/customer/service";
+} from "../procedures";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
+import customerService from "../customer/service";
 import { z } from "zod";
 
 export const customerRouter = createTRPCRouter({

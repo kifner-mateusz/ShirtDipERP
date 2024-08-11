@@ -1,6 +1,6 @@
-import { addresses } from "@/api/address/schema";
-import type { Address, UpdatedAddress } from "@/api/address/validator";
-import { type DBType, db } from "@/db";
+import { addresses } from "../address/schema";
+import type { Address, UpdatedAddress } from "../address/validator";
+import { type DBType, db } from "../../db";
 import { eq, sql } from "drizzle-orm";
 
 // compile query ahead of time

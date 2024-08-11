@@ -1,7 +1,7 @@
 import { spreadsheets } from "./schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 
 export const selectSpreadsheetZodSchema = createSelectSchema(spreadsheets, {
   data: z.any().array().array(),

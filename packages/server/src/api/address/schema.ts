@@ -1,7 +1,7 @@
 import { pgTable, serial, varchar } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
-import { customers } from "@/api/customer/schema";
-import { orders } from "@/api/order/schema";
+import { customers } from "../customer/schema";
+import { orders } from "../order/schema";
 
 export const addresses = pgTable("addresses", {
   id: serial("id").primaryKey(),

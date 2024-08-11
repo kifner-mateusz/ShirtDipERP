@@ -1,5 +1,5 @@
 import fs from "fs";
-import { isMimeImage } from "@/utils/isMimeImage";
+import { isMimeImage } from "../../../utils/isMimeImage";
 import fsp from "fs/promises";
 import type { ImapFlow } from "imapflow";
 import Logger from "js-logger";

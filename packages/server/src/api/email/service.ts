@@ -1,11 +1,11 @@
-import { type DBType, db } from "@/db";
-import { email_credentials } from "@/api/email/schema";
+import { type DBType, db } from "../../db";
+import { email_credentials } from "../email/schema";
 import { eq, sql } from "drizzle-orm";
 import type {
   EmailCredential,
   UpdatedEmailCredential,
-} from "@/api/email/validator";
-import type { MetadataType } from "@/types/MetadataType";
+} from "../email/validator";
+import type { MetadataType } from "../../types/MetadataType";
 
 // compile query ahead of time
 const emailCredentialPrepareGetById = db.query.email_credentials

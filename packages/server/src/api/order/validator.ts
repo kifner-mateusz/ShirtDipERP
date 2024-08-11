@@ -1,11 +1,11 @@
-import { orders } from "@/api/order/schema";
+import { orders } from "../order/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
 import { insertAddressZodSchema } from "../address/validator";
 import { insertCustomerWithRelationZodSchema } from "../customer/validator";
 import { insertEmailMessageZodSchema } from "../email-message/validator";
 import { insertFileZodSchema } from "../file/validator";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 import { insertProductZodSchema } from "../product/validator";
 import { insertSpreadsheetZodSchema } from "../spreadsheet/validator";
 import { insertUserZodSchema } from "../user/validator";

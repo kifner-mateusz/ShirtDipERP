@@ -1,14 +1,14 @@
-import { type DBType, db } from "@/db";
-import { addresses } from "@/api/address/schema";
-import { customers } from "@/api/customer/schema";
+import { type DBType, db } from "../../../db";
+import { addresses } from "../../address/schema";
+import { customers } from "../schema";
 import type {
   Customer,
   CustomerWithRelations,
   UpdatedCustomer,
-} from "@/api/customer/validator";
+} from "../validator";
 import { eq, sql } from "drizzle-orm";
 import addressServices from "../../address/service";
-import type { MetadataType } from "@/types/MetadataType";
+import type { MetadataType } from "../../../types/MetadataType";
 import _ from "lodash";
 import addressRelation from "./addressRelation";
 import type { Address } from "../../address/validator";

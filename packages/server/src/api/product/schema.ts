@@ -7,7 +7,7 @@ import {
   text,
   varchar,
 } from "drizzle-orm/pg-core";
-import { metadata } from "@/db/_metadata";
+import { metadata } from "../../db/_metadata";
 import { orders_to_products } from "../order/schema";
 
 export const products = pgTable("products", {

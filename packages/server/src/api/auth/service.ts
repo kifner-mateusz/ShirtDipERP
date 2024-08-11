@@ -1,6 +1,6 @@
-import { type DBType, db, eq, sql } from "@/db/index";
-import type { Err } from "@/types/Err";
-import type { OK } from "@/types/Ok";
+import { type DBType, db, eq, sql } from "../../db/index";
+import type { Err } from "../../types/Err";
+import type { OK } from "../../types/Ok";
 import { authTokens } from "./schema";
 import type { AuthToken, NewAuthToken } from "./validator";
 

@@ -1,7 +1,7 @@
 import { products } from "./schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 
 export const selectProductZodSchema = createSelectSchema(products, {
   colors: z.string().array(),

@@ -1,4 +1,5 @@
 export { default as addressService } from "./api/address/service";
+export { default as authService } from "./api/auth/service";
 export { default as customerService } from "./api/customer/service";
 export { default as emailMessageService } from "./api/email-message/service";
 export { default as emailService } from "./api/email/service";

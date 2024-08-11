@@ -2,9 +2,9 @@ import { z } from "zod";
 
 import { customers } from "../customer/schema";
 import { orders } from "../order/schema";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 import { ilike, or } from "drizzle-orm";
-import { db } from "@/db";
+import { db } from "../../db";
 
 export const searchRouter = createTRPCRouter({
   all: employeeProcedure

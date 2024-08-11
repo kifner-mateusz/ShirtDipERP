@@ -1,11 +1,11 @@
 import { products } from "./schema";
 import { insertProductZodSchema, updateProductZodSchema } from "./validator";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
 } from "../procedures";
-import productService from "@/api/product/service";
+import productService from "../product/service";
 import { z } from "zod";
 
 export const productRouter = createTRPCRouter({

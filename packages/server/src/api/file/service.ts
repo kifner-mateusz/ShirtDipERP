@@ -1,8 +1,8 @@
-import { type DBType, db } from "@/db";
-import { files } from "@/api/file/schema";
+import { type DBType, db } from "../../db";
+import { files } from "../file/schema";
 import { eq, sql } from "drizzle-orm";
-import type { File, NewFile, UpdatedFile } from "@/api/file/validator";
-import type { MetadataType } from "@/types/MetadataType";
+import type { File, NewFile, UpdatedFile } from "../file/validator";
+import type { MetadataType } from "../../types/MetadataType";
 import { baseUrl } from "./config";
 
 // compile query ahead of time

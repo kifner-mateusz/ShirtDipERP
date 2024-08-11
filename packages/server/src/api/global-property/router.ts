@@ -2,12 +2,8 @@ import { z } from "zod";
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
-} from "@/api/procedures";
-import {
-  employeeProcedure,
-  createTRPCRouter,
-  managerProcedure,
-} from "@/api/trpc";
+} from "../procedures";
+import { employeeProcedure, createTRPCRouter, managerProcedure } from "../trpc";
 import { eq } from "drizzle-orm";
 import { global_properties } from "./schema";
 import {
@@ -15,7 +11,7 @@ import {
   updateGlobalPropertiesZodSchema,
 } from "./validator";
 import globalPropertyService from "./service";
-import { db } from "@/db";
+import { db } from "../../db";
 
 export const globalPropertyRouter = createTRPCRouter({
   getById: employeeProcedure

@@ -6,8 +6,8 @@ import {
 import {
   createProcedureOldSearch,
   createProcedureSimpleSearch,
-} from "@/api/procedures";
-import { employeeProcedure, createTRPCRouter } from "@/api/trpc";
+} from "../procedures";
+import { employeeProcedure, createTRPCRouter } from "../trpc";
 import emailMessageService from "./service";
 import { z } from "zod";
 

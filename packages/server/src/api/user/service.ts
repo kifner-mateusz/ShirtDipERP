@@ -1,8 +1,9 @@
-import { db } from "@/db";
+import { db } from "../../db";
 import { users } from "./schema";
-import { eq, sql } from "drizzle-orm";
+import { eq, inArray, sql } from "drizzle-orm";
 import type { UpdatedUser, User } from "./validator";
-import type { MetadataType } from "@/types/MetadataType";
+import type { MetadataType } from "../../types/MetadataType";
+import type { Err } from "../../types/Err";
 
 // TODO: make this compatible with lucia auth
 
@@ -48,6 +49,45 @@ async function update(userData: UpdatedUser & MetadataType) {
   return updatedUser[0];
 }
 
-const userService = { getById, create, deleteById, update };
+// compile query ahead of time
+const userPrepareGetByEmail = db.query.users
+  .findFirst({
+    where: eq(users.email, sql.placeholder("email")),
+  })
+  .prepare("userPrepareGetByEmail");
+
+async function getByEmail(email: string): Promise<User | Err> {
+  const user = await userPrepareGetByEmail.execute({ email });
+  if (!user)
+    return {
+      error: `[UserService]: Could not find user with email ${email}`,
+    };
+  return user;
+}
+
+// compile query ahead of time
+const userPrepareGetManyById = db
+  .select()
+  .from(users)
+  .where(inArray(users.id, sql.placeholder("ids")))
+  .prepare("userPrepareGetManyById");
+
+async function getManyByIds(ids: number[]): Promise<User[] | Err> {
+  const users = await userPrepareGetManyById.execute({ ids });
+  if (users.length !== ids.length)
+    return {
+      error: `[UserService]: Could not find users with ids ${ids}`,
+    };
+  return users;
+}
+
+const userService = {
+  getById,
+  create,
+  deleteById,
+  update,
+  getByEmail,
+  getManyByIds,
+};
 
 export default userService;

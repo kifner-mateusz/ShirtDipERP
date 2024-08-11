@@ -1,0 +1,275 @@
+enum role {
+  normal
+  employee
+  manager
+  admin
+}
+
+table addresses {
+  id serial [pk, not null, increment]
+  street_name varchar(255) [default: '']
+  street_number varchar(255) [default: '']
+  apartment_number varchar(255) [default: '']
+  second_line varchar(255) [default: '']
+  post_code varchar(255) [default: '']
+  city varchar(255) [default: '']
+  province varchar(255) [default: 'pomorskie']
+}
+
+table tyfons_lab_access_tokens {
+  id text [pk, not null]
+  user_id text [not null]
+  token varchar(30) [not null]
+  expiration_date "timestamp with time zone" [default: `NOW() + INTERVAL '15 minutes'`]
+}
+
+table customers {
+  id serial [pk, not null, increment]
+  username varchar(255) [default: '']
+  firstname varchar(255) [default: '']
+  lastname varchar(255) [default: '']
+  email varchar(255) [default: '']
+  phone_number varchar(255) [default: '']
+  company_name varchar(255) [default: '']
+  notes text [default: '<p></p>']
+  address_id integer
+  is_template boolean [default: false]
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table email_credentials {
+  id serial [pk, not null, increment]
+  host varchar(255) [default: '']
+  port integer [not null, default: 993]
+  user varchar(255) [default: '']
+  protocol varchar(255) [default: 'imap']
+  password varchar(255) [default: '']
+  boolean boolean [default: true]
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table email_credentials_to_users {
+  email_credentials_id integer [not null]
+  userId varchar(255) [not null]
+
+  indexes {
+    (email_credentials_id, userId) [pk]
+  }
+}
+
+table email_messages {
+  id serial [pk, not null, increment]
+  subject varchar(255)
+  from varchar(255)
+  to varchar(255)
+  date "timestamp (6)"
+  html text
+  text text
+  message_id varchar(255)
+  message_uid integer
+  mailbox varchar
+  client_user varchar
+  header_lines varchar[] [default: `ARRAY[]::varchar[]`]
+  text_as_html text
+  message_file_id integer
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table email_messages_to_files {
+  email_messages_id integer [not null]
+  file_id integer [not null]
+
+  indexes {
+    (email_messages_id, file_id) [pk]
+  }
+}
+
+table expenses {
+  id serial [pk, not null, increment]
+  name varchar(255) [default: '']
+  cost "numeric(10, 2)" [default: `'0'::int`]
+  expense_data json [default: `[]`]
+  is_template boolean [default: false]
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table files {
+  id serial [pk, not null, increment]
+  size integer [not null]
+  filepath varchar(2048) [not null]
+  original_filename varchar(1024)
+  new_filename varchar(1024)
+  filename varchar(1024)
+  mimetype varchar(255)
+  hash varchar(10)
+  token varchar(32)
+  width integer
+  height integer
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table global_properties {
+  id serial [pk, not null, increment]
+  category varchar(255) [not null, default: '']
+  name varchar(255) [not null, unique]
+  data "varchar(255)[]" [default: `ARRAY[]::varchar[]`]
+}
+
+table orders {
+  id serial [pk, not null, increment]
+  name varchar(255) [default: '']
+  status varchar(255) [default: 'planned']
+  notes varchar(255) [default: '<p></p>']
+  price varchar(255) [default: '']
+  is_price_paid boolean [default: false]
+  is_in_warehouse boolean [default: false]
+  is_product_ordered boolean [default: false]
+  date_of_completion date
+  date_of_admission date [default: `now()`]
+  workstation_type varchar(255) [default: 'not_set']
+  pickup_method varchar(255) [default: 'not_set']
+  settlement varchar(64) [default: 'not_set']
+  work_time "double precision" [default: 0]
+  customer_id integer
+  address_id integer
+  is_archived boolean [default: false]
+  is_template boolean [default: false]
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table orders_to_email_messages {
+  order_id integer [not null]
+  email_message_id integer [not null]
+
+  indexes {
+    (order_id, email_message_id) [pk]
+  }
+}
+
+table orders_to_files {
+  order_id integer [not null]
+  file_id integer [not null]
+
+  indexes {
+    (order_id, file_id) [pk]
+  }
+}
+
+table orders_to_products {
+  order_id integer [not null]
+  product_id integer [not null]
+
+  indexes {
+    (order_id, product_id) [pk]
+  }
+}
+
+table orders_to_users {
+  order_id integer [not null]
+  userId varchar(255) [not null]
+
+  indexes {
+    (order_id, userId) [pk]
+  }
+}
+
+table products {
+  id serial [pk, not null, increment]
+  name varchar(255) [unique]
+  category varchar(255) [default: '']
+  description text [default: '']
+  unit_price "numeric(10, 2)" [default: `'0'::int`]
+  colors "varchar(64)[]" [default: `ARRAY[]::varchar[]`]
+  sizes "varchar(255)[]" [default: `ARRAY[]::varchar[]`]
+  is_template boolean [default: false]
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table tyfons_lab_session {
+  id text [pk, not null]
+  user_id text [not null]
+  expires_at "timestamp with time zone" [not null]
+}
+
+table spreadsheets {
+  id serial [pk, not null, increment]
+  name varchar(255)
+  data json [default: `[]`]
+  order_id integer
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+table user {
+  id text [pk, not null]
+  name varchar(255)
+  email varchar(255) [not null]
+  emailVerified timestamp
+  image varchar(255)
+  role role [not null, default: 'normal']
+  tokenId text
+  wsTokenId text
+  updated_at timestamp [not null, default: `now()`]
+  created_at timestamp [not null, default: `now()`]
+  created_by_id varchar(255)
+  updated_by_id varchar(255)
+}
+
+ref: customers.address_id > addresses.id
+
+ref: email_credentials_to_users.email_credentials_id > email_credentials.id
+
+ref: email_credentials_to_users.userId - user.id
+
+ref: email_messages.message_file_id > files.id
+
+ref: email_messages_to_files.email_messages_id > email_messages.id
+
+ref: email_messages_to_files.file_id > files.id
+
+ref: orders.address_id > addresses.id
+
+ref: orders.customer_id - customers.id
+
+ref: orders_to_email_messages.order_id > orders.id
+
+ref: orders_to_email_messages.email_message_id > email_messages.id
+
+ref: orders_to_files.order_id > orders.id
+
+ref: orders_to_files.file_id > files.id
+
+ref: orders_to_products.order_id > orders.id
+
+ref: orders_to_products.product_id > products.id
+
+ref: orders_to_users.order_id > orders.id
+
+ref: orders_to_users.userId - user.id
+
+ref: spreadsheets.order_id > orders.id
+
+ref: user.wsTokenId - tyfons_lab_access_tokens.id

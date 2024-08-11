@@ -1,7 +1,7 @@
-import { addresses } from "@/api/address/schema";
+import { addresses } from "../address/schema";
 import { createInsertSchema, createSelectSchema } from "drizzle-zod";
 import type { z } from "zod";
-import idRequiredZodSchema from "@/types/idRequiredZodSchema";
+import idRequiredZodSchema from "../../types/idRequiredZodSchema";
 
 export const selectAddressZodSchema = createSelectSchema(addresses);
 export const insertAddressZodSchema = createInsertSchema(addresses);
