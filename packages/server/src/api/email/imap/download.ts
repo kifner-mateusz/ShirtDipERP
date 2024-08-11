@@ -1,18 +1,12 @@
 import fs from "fs";
-import { env } from "@/env";
 import { isMimeImage } from "@/utils/isMimeImage";
-import NodeClam from "clamscan";
 import fsp from "fs/promises";
 import type { ImapFlow } from "imapflow";
 import Logger from "js-logger";
 import _ from "lodash";
 import { type ParsedMail, simpleParser } from "mailparser";
 import sharp from "sharp";
-import {
-  bufferToReadable,
-  resolveEmailCacheFileName,
-  writeStreamAsync,
-} from "./utils";
+import { resolveEmailCacheFileName, writeStreamAsync } from "./utils";
 
 // cache emails
 export async function downloadEmailByUid(

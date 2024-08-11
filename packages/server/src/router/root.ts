@@ -1,20 +1,20 @@
 import { createTRPCRouter } from "@/api/trpc";
 
-import { addressRouter } from "./address/router";
-import { adminRouter } from "./admin/router";
-import { customerRouter } from "./customer/router";
-import { emailRouter } from "./email/router";
-import { expenseRouter } from "./expense/router";
-import { fileRouter } from "./file/router";
-import { orderRouter } from "./order/router";
+import { addressRouter } from "@/api/address/router";
+import { adminRouter } from "@/api/admin/router";
+import { customerRouter } from "@/api/customer/router";
+import { emailRouter } from "@/api/email/router";
+import { expenseRouter } from "@/api/expense/router";
+import { fileRouter } from "@/api/file/router";
+import { orderRouter } from "@/api/order/router";
 import { productRouter } from "@/api/product/router";
-import { searchRouter } from "./search/router";
+import { searchRouter } from "@/api/search/router";
 import { sessionRouter } from "@/api/session/router";
-import { settingsRouter } from "./settings/router";
-import { spreadsheetRouter } from "./spreadsheet/router";
-import { userRouter } from "./user/router";
-import { emailMessageRouter } from "./email-message/router";
-import { globalPropertyRouter } from "./global-property/router";
+import { settingsRouter } from "@/api/settings/router";
+import { spreadsheetRouter } from "@/api/spreadsheet/router";
+import { userRouter } from "@/api/user/router";
+import { emailMessageRouter } from "@/api/email-message/router";
+import { globalPropertyRouter } from "@/api/global-property/router";
 /**
  * This is the primary router for your server.
  *

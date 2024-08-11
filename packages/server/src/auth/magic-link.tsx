@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { sendSignInEmail } from "@shirterp/email-templates";
-import { authService, userService } from "@shirterp/server/services";
+import { authService, userService } from "@/services";
 import { generateIdFromEntropySize } from "lucia";
 import { lucia } from "./auth";
 

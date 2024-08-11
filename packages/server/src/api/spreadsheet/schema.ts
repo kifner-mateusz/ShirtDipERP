@@ -2,7 +2,7 @@ import { relations } from "drizzle-orm";
 import { integer, json, pgTable, serial, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "@/db/_metadata";
 import { orders } from "../order/schema/orders";
-import type { UniversalMatrix } from "@/components/Spreadsheet/useSpreadSheetData";
+import type { UniversalMatrix } from "@/types/UniversalMatrixType";
 
 export const spreadsheets = pgTable("spreadsheets", {
   id: serial("id").primaryKey(),

@@ -3,8 +3,8 @@ import { users } from "./schema";
 import { eq, sql } from "drizzle-orm";
 import type { UpdatedUser, User } from "./validator";
 import type { MetadataType } from "@/types/MetadataType";
-import { authDBAdapter } from "../../auth";
-import type { AdapterUser } from "next-auth/adapters";
+
+// TODO: make this compatible with lucia auth
 
 // compile query ahead of time
 const userPrepareGetById = db.query.users
@@ -21,15 +21,15 @@ async function getById(id: string) {
 }
 
 async function create(userData: Partial<User>) {
-  const newUser = await authDBAdapter.createUser?.({
-    emailVerified: new Date(),
-    ...userData,
-  } as AdapterUser);
-  if (!newUser)
-    throw new Error(
-      `[UserService]: Could not create user with email ${userData.email}`,
-    );
-  return newUser;
+  // const newUser = await authDBAdapter.createUser?.({
+  //   emailVerified: new Date(),
+  //   ...userData,
+  // } as AdapterUser);
+  // if (!newUser)
+  //   throw new Error(
+  //     `[UserService]: Could not create user with email ${userData.email}`,
+  //   );
+  // return newUser;
 }
 
 async function deleteById(id: string) {

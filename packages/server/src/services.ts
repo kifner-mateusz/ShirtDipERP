@@ -1,2 +1,11 @@
-export { default as authService } from "./auth/service";
-export { default as userService } from "./user/service";
+export { default as addressService } from "./api/address/service";
+export { default as customerService } from "./api/customer/service";
+export { default as emailMessageService } from "./api/email-message/service";
+export { default as emailService } from "./api/email/service";
+export { default as expenseService } from "./api/expense/service";
+export { default as fileService } from "./api/file/service";
+export { default as globalPropertyService } from "./api/global-property/service";
+export { default as orderService } from "./api/order/service";
+export { default as productService } from "./api/product/service";
+export { default as spreadsheetService } from "./api/spreadsheet/service";
+export { default as userService } from "./api/user/service";

@@ -6,7 +6,8 @@
     "jsx": "preserve",
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "rootDir": "../../"
   },
   "include": ["src"],
   "exclude": ["node_modules"]

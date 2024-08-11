@@ -1,6 +1,5 @@
 import fs from "fs";
 import path from "path";
-import { env } from "@/env";
 import { files as filesSchema } from "@/api/file/schema";
 import { db } from "@/db";
 import { genRandomStringServerOnly } from "@/utils/genRandomString";
@@ -15,11 +14,7 @@ import {
   email_messages_to_files,
 } from "../../email-message/schema";
 import { uploadDir } from "./config";
-import {
-  bufferToReadable,
-  resolveEmailCacheFileName,
-  writeStreamAsync,
-} from "./utils";
+import { resolveEmailCacheFileName, writeStreamAsync } from "./utils";
 
 export async function transferEmailToDbByUId(
   client: ImapFlow,

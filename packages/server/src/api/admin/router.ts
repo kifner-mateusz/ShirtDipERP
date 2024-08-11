@@ -1,6 +1,6 @@
 import { env } from "@/env";
 import { adminProcedure, createTRPCRouter, publicProcedure } from "@/api/trpc";
-import { verificationTokens } from "@/api/user/schema";
+// import { verificationTokens } from "@/api/user/schema";
 import { db } from "@/db";
 
 export const adminRouter = createTRPCRouter({
@@ -8,7 +8,8 @@ export const adminRouter = createTRPCRouter({
     ? publicProcedure
     : adminProcedure
   ).mutation(async () => {
-    await db.delete(verificationTokens);
-    return { ok: true };
+    // await db.delete(verificationTokens);
+    // return { ok: true };
+    // TODO: Implement purgeAuthTokens
   }),
 });

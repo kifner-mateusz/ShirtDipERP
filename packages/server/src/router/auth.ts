@@ -1,7 +1,7 @@
 import type { TRPCRouterRecord } from "@trpc/server";
 
-import { protectedProcedure, publicProcedure } from "../trpc";
-import { magicLink, signOut } from "@shirterp/server/auth";
+import { employeeProcedure, publicProcedure } from "@/api/trpc";
+import { magicLink, signOut } from "@/auth";
 import { z } from "zod";
 
 export const authRouter = {
@@ -14,7 +14,7 @@ export const authRouter = {
   getSession: publicProcedure.query(({ ctx }) => {
     return ctx.session;
   }),
-  getSecretMessage: protectedProcedure.query(() => {
+  getSecretMessage: employeeProcedure.query(() => {
     return "you can see this secret message!";
   }),
 
