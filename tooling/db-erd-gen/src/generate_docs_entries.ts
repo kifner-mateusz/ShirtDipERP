@@ -33,7 +33,6 @@ function processDbml(dbmlContent: string) {
 title: ${title}
 ---
 
-# ${title}
 
 ![Schema Image](/img/schema/${tableName}.svg)
 

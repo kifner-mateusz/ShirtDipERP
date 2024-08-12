@@ -2,7 +2,6 @@
 title: email_credentials_to_users
 ---
 
-# email_credentials_to_users
 
 ![Schema Image](/img/schema/email_credentials_to_users.svg)
 
@@ -19,4 +18,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T14:21:09.551Z_
+_Last modified: 2024-08-12T14:24:58.925Z_

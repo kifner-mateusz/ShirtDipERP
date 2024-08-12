@@ -2,7 +2,6 @@
 title: expenses
 ---
 
-# expenses
 
 ![Schema Image](/img/schema/expenses.svg)
 
@@ -34,4 +33,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T14:21:09.553Z_
+_Last modified: 2024-08-12T14:24:58.925Z_

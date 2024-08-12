@@ -2,7 +2,6 @@
 title: orders_to_products
 ---
 
-# orders_to_products
 
 ![Schema Image](/img/schema/orders_to_products.svg)
 
@@ -19,4 +18,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T14:21:09.555Z_
+_Last modified: 2024-08-12T14:24:58.926Z_
