@@ -1,14 +1,8 @@
 import { relations } from "drizzle-orm";
-import {
-  boolean,
-  integer,
-  pgTable,
-  serial,
-  text,
-  varchar,
-} from "drizzle-orm/pg-core";
+import { boolean, integer, serial, text, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "../../db/_metadata";
 import { addresses } from "../address/schema";
+import { pgTable } from "../../db/pgTable";
 
 export const customers = pgTable("customers", {
   id: serial("id").primaryKey(),

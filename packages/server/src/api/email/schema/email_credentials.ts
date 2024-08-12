@@ -1,13 +1,8 @@
 import { relations } from "drizzle-orm";
-import {
-  boolean,
-  integer,
-  pgTable,
-  serial,
-  varchar,
-} from "drizzle-orm/pg-core";
+import { boolean, integer, serial, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "../../../db/_metadata";
 import { email_credentials_to_users } from "./email_credentials_to_users";
+import { pgTable } from "../../../db/pgTable";
 
 export const email_credentials = pgTable("email_credentials", {
   id: serial("id").primaryKey(),

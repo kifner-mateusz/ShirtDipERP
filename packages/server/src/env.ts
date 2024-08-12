@@ -8,6 +8,7 @@ export const env = createEnv({
       .enum(["development", "production", "test"])
       .default("development"),
     DATABASE_URL: z.string().url(),
+    DATABASE_PREFIX: z.string().optional().default(""),
     SECRET_COOKIE_PASSWORD: z.string().min(32),
     NEXTAUTH_URL: z.string().url(),
     NEXTAUTH_SECRET: z.string(),

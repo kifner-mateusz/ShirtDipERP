@@ -1,16 +1,10 @@
 import { relations, sql } from "drizzle-orm";
-import {
-  integer,
-  pgTable,
-  serial,
-  text,
-  timestamp,
-  varchar,
-} from "drizzle-orm/pg-core";
+import { integer, serial, text, timestamp, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "../../../db/_metadata";
 import { email_messages_to_files } from "./email_messages_to_files";
 import { files } from "../../file/schema";
 import { orders_to_email_messages } from "../../order/schema/orders_to_email_messages";
+import { pgTable } from "../../../db/pgTable";
 
 export const email_messages = pgTable("email_messages", {
   id: serial("id").primaryKey(),

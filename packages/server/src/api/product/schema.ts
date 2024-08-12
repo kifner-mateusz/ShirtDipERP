@@ -1,14 +1,8 @@
 import { relations, sql } from "drizzle-orm";
-import {
-  boolean,
-  decimal,
-  pgTable,
-  serial,
-  text,
-  varchar,
-} from "drizzle-orm/pg-core";
+import { boolean, decimal, serial, text, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "../../db/_metadata";
 import { orders_to_products } from "../order/schema";
+import { pgTable } from "../../db/pgTable";
 
 export const products = pgTable("products", {
   id: serial("id").primaryKey(),

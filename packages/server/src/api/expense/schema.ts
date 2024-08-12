@@ -1,13 +1,7 @@
-import {
-  boolean,
-  decimal,
-  json,
-  pgTable,
-  serial,
-  varchar,
-} from "drizzle-orm/pg-core";
+import { boolean, decimal, json, serial, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "../../db/_metadata";
 import { sql } from "drizzle-orm";
+import { pgTable } from "../../db/pgTable";
 
 export const expenses = pgTable("expenses", {
   id: serial("id").primaryKey(),

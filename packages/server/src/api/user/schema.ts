@@ -1,7 +1,8 @@
 import { relations } from "drizzle-orm";
-import { pgEnum, pgTable, text, timestamp, varchar } from "drizzle-orm/pg-core";
+import { pgEnum, text, timestamp, varchar } from "drizzle-orm/pg-core";
 import { metadata } from "../../db/_metadata";
 import { authTokens } from "../auth/schema";
+import { pgTable } from "../../db/pgTable";
 
 export const roleEnum = pgEnum("role", [
   "normal",

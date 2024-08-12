@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
-import { pgTable, serial, varchar } from "drizzle-orm/pg-core";
+import { serial, varchar } from "drizzle-orm/pg-core";
+import { pgTable } from "../../db/pgTable";
 
 export const global_properties = pgTable("global_properties", {
   id: serial("id").primaryKey(),

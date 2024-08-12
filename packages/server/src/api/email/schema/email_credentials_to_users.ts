@@ -1,7 +1,8 @@
 import { relations } from "drizzle-orm";
-import { integer, pgTable, primaryKey, varchar } from "drizzle-orm/pg-core";
+import { integer, primaryKey, varchar } from "drizzle-orm/pg-core";
 import { users } from "../../user/schema";
 import { email_credentials } from "./email_credentials";
+import { pgTable } from "../../../db/pgTable";
 
 export const email_credentials_to_users = pgTable(
   "email_credentials_to_users",

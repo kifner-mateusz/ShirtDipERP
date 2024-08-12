@@ -4,7 +4,6 @@ import {
   date,
   doublePrecision,
   integer,
-  pgTable,
   serial,
   varchar,
 } from "drizzle-orm/pg-core";
@@ -16,6 +15,7 @@ import { orders_to_files } from "./orders_to_files";
 import { orders_to_products } from "./orders_to_products";
 import { orders_to_users } from "./orders_to_users";
 import { spreadsheets } from "../../spreadsheet/schema";
+import { pgTable } from "../../../db/pgTable";
 
 export const orders = pgTable("orders", {
   id: serial("id").primaryKey(),
