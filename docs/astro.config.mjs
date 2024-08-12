@@ -5,22 +5,22 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'ShirtERP Docs',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/mateusz-kifner/shirt-erp',
 			},
 			sidebar: [
-				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+				// {
+				// 	label: 'Guides',
+				// 	items: [
+				// 		// Each item here is one entry in the navigation menu.
+				// 		{ label: 'Example Guide', slug: 'guides/example' },
+				// 	],
+				// },
+				// {
+				// 	label: 'Reference',
+				// 	autogenerate: { directory: 'reference' },
+				// },
 				{
 					label: 'DB Schema',
 					autogenerate: { directory: 'schema' },
