@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="368" height="190.22566902880726"><g id="SvgjsG1014" class="node" x="-247" y="2238">
+<title x="-247" y="2238">orders_to_files</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="430.63" cy="-2142.8" rx="254.62" ry="130.22" x="-247" y="2238"></ellipse>
+<rect width="356" height="60" x="6" y="5" fill="#1d71b8" stroke="transparent" points="252.63,-2172.8 252.63,-2232.8 608.63,-2232.8 608.63,-2172.8 252.63,-2172.8"></rect>
+<rect width="356" height="60" x="6" y="5" fill="none" stroke="#29235c" points="252.63,-2172.8 252.63,-2232.8 608.63,-2232.8 608.63,-2172.8 252.63,-2172.8"></rect>
+<text text-anchor="start" x="17" y="44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       orders_to_files       </text>
+<rect width="356" height="60" x="6" y="65" fill="#e7e2dd" stroke="transparent" points="252.63,-2112.8 252.63,-2172.8 608.63,-2172.8 608.63,-2112.8 252.63,-2112.8"></rect>
+<rect width="356" height="60" x="6" y="65" fill="none" stroke="#29235c" points="252.63,-2112.8 252.63,-2172.8 608.63,-2172.8 608.63,-2112.8 252.63,-2112.8"></rect>
+<text text-anchor="start" x="17" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">order_id</text>
+<text text-anchor="start" x="134" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="214" y="104" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<text text-anchor="start" x="312" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="321" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="356" height="60" x="6" y="125" fill="#e7e2dd" stroke="transparent" points="252.63,-2052.8 252.63,-2112.8 608.63,-2112.8 608.63,-2052.8 252.63,-2052.8"></rect>
+<rect width="356" height="60" x="6" y="125" fill="none" stroke="#29235c" points="252.63,-2052.8 252.63,-2112.8 608.63,-2112.8 608.63,-2052.8 252.63,-2052.8"></rect>
+<text text-anchor="start" x="17" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">file_id</text>
+<text text-anchor="start" x="101" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="214" y="164" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<text text-anchor="start" x="312" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="321" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="358" height="182" x="5" y="4" fill="none" stroke="#29235c" stroke-width="2" points="251.63,-2051.8 251.63,-2233.8 609.63,-2233.8 609.63,-2051.8 251.63,-2051.8"></rect>
+</g></svg>

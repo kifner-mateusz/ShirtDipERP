@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="648" height="309.8646665423815"><g id="SvgjsG1002" class="node" x="-1743" y="5879">
+<title x="-1743" y="5879">tyfons_lab_access_tokens</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="2067.46" cy="-5723.8" rx="452.6" ry="214.92" x="-1743" y="5879"></ellipse>
+<rect width="636" height="60" x="6" y="5" fill="#1d71b8" stroke="transparent" points="1749.46,-5813.8 1749.46,-5873.8 2385.46,-5873.8 2385.46,-5813.8 1749.46,-5813.8"></rect>
+<rect width="636" height="60" x="6" y="5" fill="none" stroke="#29235c" points="1749.46,-5813.8 1749.46,-5873.8 2385.46,-5873.8 2385.46,-5813.8 1749.46,-5813.8"></rect>
+<text text-anchor="start" x="74" y="44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       tyfons_lab_access_tokens       </text>
+<rect width="636" height="60" x="6" y="65" fill="#e7e2dd" stroke="transparent" points="1749.46,-5753.8 1749.46,-5813.8 2385.46,-5813.8 2385.46,-5753.8 1749.46,-5753.8"></rect>
+<rect width="636" height="60" x="6" y="65" fill="none" stroke="#29235c" points="1749.46,-5753.8 1749.46,-5813.8 2385.46,-5813.8 2385.46,-5753.8 1749.46,-5753.8"></rect>
+<text text-anchor="start" x="17" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">id</text>
+<text text-anchor="start" x="42" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="540" y="104" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<text text-anchor="start" x="592" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="601" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="636" height="60" x="6" y="125" fill="#e7e2dd" stroke="transparent" points="1749.46,-5693.8 1749.46,-5753.8 2385.46,-5753.8 2385.46,-5693.8 1749.46,-5693.8"></rect>
+<rect width="636" height="60" x="6" y="125" fill="none" stroke="#29235c" points="1749.46,-5693.8 1749.46,-5753.8 2385.46,-5753.8 2385.46,-5693.8 1749.46,-5693.8"></rect>
+<text text-anchor="start" x="17" y="165" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">user_id    </text>
+<text text-anchor="start" x="540" y="164" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<text text-anchor="start" x="592" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="601" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="636" height="60" x="6" y="185" fill="#e7e2dd" stroke="transparent" points="1749.46,-5633.8 1749.46,-5693.8 2385.46,-5693.8 2385.46,-5633.8 1749.46,-5633.8"></rect>
+<rect width="636" height="60" x="6" y="185" fill="none" stroke="#29235c" points="1749.46,-5633.8 1749.46,-5693.8 2385.46,-5693.8 2385.46,-5633.8 1749.46,-5633.8"></rect>
+<text text-anchor="start" x="17" y="225" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">token    </text>
+<text text-anchor="start" x="428" y="224" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(30)</text>
+<text text-anchor="start" x="592" y="224" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="601" y="224" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="636" height="60" x="6" y="245" fill="#e7e2dd" stroke="transparent" points="1749.46,-5573.8 1749.46,-5633.8 2385.46,-5633.8 2385.46,-5573.8 1749.46,-5573.8"></rect>
+<rect width="636" height="60" x="6" y="245" fill="none" stroke="#29235c" points="1749.46,-5573.8 1749.46,-5633.8 2385.46,-5633.8 2385.46,-5573.8 1749.46,-5573.8"></rect>
+<text text-anchor="start" x="17" y="285" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">expiration_date    </text>
+<text text-anchor="start" x="271" y="284" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">timestamp with time zone</text>
+<rect width="638" height="302" x="5" y="4" fill="none" stroke="#29235c" stroke-width="2" points="1748.46,-5572.8 1748.46,-5874.8 2386.46,-5874.8 2386.46,-5572.8 1748.46,-5572.8"></rect>
+</g></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="617" height="249.71662500058696"><g id="SvgjsG1018" class="node" x="-122" y="7888">
+<title x="-122" y="7888">tyfons_lab_session</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="430.63" cy="-7762.8" rx="430.76" ry="172.57" x="-122" y="7888"></ellipse>
+<rect width="605" height="60" x="7" y="5" fill="#1d71b8" stroke="transparent" points="128.63,-7822.8 128.63,-7882.8 733.63,-7882.8 733.63,-7822.8 128.63,-7822.8"></rect>
+<rect width="605" height="60" x="7" y="5" fill="none" stroke="#29235c" points="128.63,-7822.8 128.63,-7882.8 733.63,-7882.8 733.63,-7822.8 128.63,-7822.8"></rect>
+<text text-anchor="start" x="111" y="44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       tyfons_lab_session       </text>
+<rect width="605" height="60" x="7" y="65" fill="#e7e2dd" stroke="transparent" points="128.63,-7762.8 128.63,-7822.8 733.63,-7822.8 733.63,-7762.8 128.63,-7762.8"></rect>
+<rect width="605" height="60" x="7" y="65" fill="none" stroke="#29235c" points="128.63,-7762.8 128.63,-7822.8 733.63,-7822.8 733.63,-7762.8 128.63,-7762.8"></rect>
+<text text-anchor="start" x="18" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">id</text>
+<text text-anchor="start" x="42" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="510" y="104" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<text text-anchor="start" x="561" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="570" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="605" height="60" x="7" y="125" fill="#e7e2dd" stroke="transparent" points="128.63,-7702.8 128.63,-7762.8 733.63,-7762.8 733.63,-7702.8 128.63,-7702.8"></rect>
+<rect width="605" height="60" x="7" y="125" fill="none" stroke="#29235c" points="128.63,-7702.8 128.63,-7762.8 733.63,-7762.8 733.63,-7702.8 128.63,-7702.8"></rect>
+<text text-anchor="start" x="18" y="165" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">user_id    </text>
+<text text-anchor="start" x="510" y="164" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<text text-anchor="start" x="561" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="570" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="605" height="60" x="7" y="185" fill="#e7e2dd" stroke="transparent" points="128.63,-7642.8 128.63,-7702.8 733.63,-7702.8 733.63,-7642.8 128.63,-7642.8"></rect>
+<rect width="605" height="60" x="7" y="185" fill="none" stroke="#29235c" points="128.63,-7642.8 128.63,-7702.8 733.63,-7702.8 733.63,-7642.8 128.63,-7642.8"></rect>
+<text text-anchor="start" x="17" y="225" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">expires_at    </text>
+<text text-anchor="start" x="200" y="224" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">timestamp with time zone</text>
+<text text-anchor="start" x="561" y="224" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="570" y="224" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="607" height="242" x="5" y="4" fill="none" stroke="#29235c" stroke-width="2" points="127.13,-7641.8 127.13,-7883.8 734.13,-7883.8 734.13,-7641.8 127.13,-7641.8"></rect>
+</g></svg>

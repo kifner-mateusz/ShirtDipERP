@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="243" height="313.32442652964494"><g id="SvgjsG1000" class="node" x="-1946" y="6328">
+<title x="-1946" y="6328">role</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="2067.46" cy="-6171.8" rx="166.34" ry="214.92" x="-1946" y="6328"></ellipse>
+<rect width="231" height="60" x="7" y="7" fill="#29235c" stroke="transparent" points="1952.46,-6261.8 1952.46,-6321.8 2183.46,-6321.8 2183.46,-6261.8 1952.46,-6261.8"></rect>
+<rect width="231" height="60" x="7" y="7" fill="none" stroke="#29235c" points="1952.46,-6261.8 1952.46,-6321.8 2183.46,-6321.8 2183.46,-6261.8 1952.46,-6261.8"></rect>
+<text text-anchor="start" x="33" y="45" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       role       </text>
+<rect width="231" height="60" x="7" y="67" fill="#e7e2dd" stroke="transparent" points="1952.46,-6201.8 1952.46,-6261.8 2183.46,-6261.8 2183.46,-6201.8 1952.46,-6201.8"></rect>
+<rect width="231" height="60" x="7" y="67" fill="none" stroke="#29235c" points="1952.46,-6201.8 1952.46,-6261.8 2183.46,-6261.8 2183.46,-6201.8 1952.46,-6201.8"></rect>
+<text text-anchor="start" x="38" y="105" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#1d71b8">    normal    </text>
+<rect width="231" height="60" x="7" y="127" fill="#e7e2dd" stroke="transparent" points="1952.46,-6141.8 1952.46,-6201.8 2183.46,-6201.8 2183.46,-6141.8 1952.46,-6141.8"></rect>
+<rect width="231" height="60" x="7" y="127" fill="none" stroke="#29235c" points="1952.46,-6141.8 1952.46,-6201.8 2183.46,-6201.8 2183.46,-6141.8 1952.46,-6141.8"></rect>
+<text text-anchor="start" x="17" y="165" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#1d71b8">    employee    </text>
+<rect width="231" height="60" x="7" y="187" fill="#e7e2dd" stroke="transparent" points="1952.46,-6081.8 1952.46,-6141.8 2183.46,-6141.8 2183.46,-6081.8 1952.46,-6081.8"></rect>
+<rect width="231" height="60" x="7" y="187" fill="none" stroke="#29235c" points="1952.46,-6081.8 1952.46,-6141.8 2183.46,-6141.8 2183.46,-6081.8 1952.46,-6081.8"></rect>
+<text text-anchor="start" x="23" y="225" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#1d71b8">    manager    </text>
+<rect width="231" height="60" x="7" y="247" fill="#e7e2dd" stroke="transparent" points="1952.46,-6021.8 1952.46,-6081.8 2183.46,-6081.8 2183.46,-6021.8 1952.46,-6021.8"></rect>
+<rect width="231" height="60" x="7" y="247" fill="none" stroke="#29235c" points="1952.46,-6021.8 1952.46,-6081.8 2183.46,-6081.8 2183.46,-6021.8 1952.46,-6021.8"></rect>
+<text text-anchor="start" x="43" y="285" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#1d71b8">    admin    </text>
+<rect width="233" height="302" x="5" y="6" fill="none" stroke="#29235c" stroke-width="2" points="1950.96,-6020.8 1950.96,-6322.8 2183.96,-6322.8 2183.96,-6020.8 1950.96,-6020.8"></rect>
+</g></svg>

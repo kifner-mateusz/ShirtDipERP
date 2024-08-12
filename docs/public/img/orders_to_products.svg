@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="434" height="190.0099901219992"><g id="SvgjsG1015" class="node" x="-214" y="3376">
+<title x="-214" y="3376">orders_to_products</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="430.63" cy="-3280.8" rx="301.46" ry="130.22" x="-214" y="3376"></ellipse>
+<rect width="422" height="60" x="6" y="5" fill="#1d71b8" stroke="transparent" points="219.63,-3310.8 219.63,-3370.8 641.63,-3370.8 641.63,-3310.8 219.63,-3310.8"></rect>
+<rect width="422" height="60" x="6" y="5" fill="none" stroke="#29235c" points="219.63,-3310.8 219.63,-3370.8 641.63,-3370.8 641.63,-3310.8 219.63,-3310.8"></rect>
+<text text-anchor="start" x="17" y="44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       orders_to_products       </text>
+<rect width="422" height="60" x="6" y="65" fill="#e7e2dd" stroke="transparent" points="219.63,-3250.8 219.63,-3310.8 641.63,-3310.8 641.63,-3250.8 219.63,-3250.8"></rect>
+<rect width="422" height="60" x="6" y="65" fill="none" stroke="#29235c" points="219.63,-3250.8 219.63,-3310.8 641.63,-3310.8 641.63,-3250.8 219.63,-3250.8"></rect>
+<text text-anchor="start" x="17" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">order_id</text>
+<text text-anchor="start" x="134" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="280" y="104" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<text text-anchor="start" x="378" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="387" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="422" height="60" x="6" y="125" fill="#e7e2dd" stroke="transparent" points="219.63,-3190.8 219.63,-3250.8 641.63,-3250.8 641.63,-3190.8 219.63,-3190.8"></rect>
+<rect width="422" height="60" x="6" y="125" fill="none" stroke="#29235c" points="219.63,-3190.8 219.63,-3250.8 641.63,-3250.8 641.63,-3190.8 219.63,-3190.8"></rect>
+<text text-anchor="start" x="17" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">product_id</text>
+<text text-anchor="start" x="166" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="280" y="164" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<text text-anchor="start" x="378" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="387" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="424" height="182" x="5" y="4" fill="none" stroke="#29235c" stroke-width="2" points="218.63,-3189.8 218.63,-3371.8 642.63,-3371.8 642.63,-3189.8 218.63,-3189.8"></rect>
+</g></svg>

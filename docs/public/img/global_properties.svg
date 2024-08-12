@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="412" height="311.0968154553895"><g id="SvgjsG1011" class="node" x="-225" y="7513">
+<title x="-225" y="7513">global_properties</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="430.63" cy="-7357.8" rx="285.84" ry="214.92" x="-225" y="7513"></ellipse>
+<rect width="400" height="60" x="6" y="6" fill="#1d71b8" stroke="transparent" points="230.63,-7447.8 230.63,-7507.8 630.63,-7507.8 630.63,-7447.8 230.63,-7447.8"></rect>
+<rect width="400" height="60" x="6" y="6" fill="none" stroke="#29235c" points="230.63,-7447.8 230.63,-7507.8 630.63,-7507.8 630.63,-7447.8 230.63,-7447.8"></rect>
+<text text-anchor="start" x="21" y="44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       global_properties       </text>
+<rect width="400" height="60" x="6" y="66" fill="#e7e2dd" stroke="transparent" points="230.63,-7387.8 230.63,-7447.8 630.63,-7447.8 630.63,-7387.8 230.63,-7387.8"></rect>
+<rect width="400" height="60" x="6" y="66" fill="none" stroke="#29235c" points="230.63,-7387.8 230.63,-7447.8 630.63,-7447.8 630.63,-7387.8 230.63,-7387.8"></rect>
+<text text-anchor="start" x="17" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">id</text>
+<text text-anchor="start" x="42" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="279" y="104" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">serial</text>
+<text text-anchor="start" x="356" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="365" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="400" height="60" x="6" y="126" fill="#e7e2dd" stroke="transparent" points="230.63,-7327.8 230.63,-7387.8 630.63,-7387.8 630.63,-7327.8 230.63,-7327.8"></rect>
+<rect width="400" height="60" x="6" y="126" fill="none" stroke="#29235c" points="230.63,-7327.8 230.63,-7387.8 630.63,-7387.8 630.63,-7327.8 230.63,-7327.8"></rect>
+<text text-anchor="start" x="17" y="165" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">category    </text>
+<text text-anchor="start" x="175" y="164" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<text text-anchor="start" x="356" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="365" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="400" height="60" x="6" y="186" fill="#e7e2dd" stroke="transparent" points="230.63,-7267.8 230.63,-7327.8 630.63,-7327.8 630.63,-7267.8 230.63,-7267.8"></rect>
+<rect width="400" height="60" x="6" y="186" fill="none" stroke="#29235c" points="230.63,-7267.8 230.63,-7327.8 630.63,-7327.8 630.63,-7267.8 230.63,-7267.8"></rect>
+<text text-anchor="start" x="17" y="225" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">name    </text>
+<text text-anchor="start" x="175" y="224" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<text text-anchor="start" x="356" y="224" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="365" y="224" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="400" height="60" x="6" y="246" fill="#e7e2dd" stroke="transparent" points="230.63,-7207.8 230.63,-7267.8 630.63,-7267.8 630.63,-7207.8 230.63,-7207.8"></rect>
+<rect width="400" height="60" x="6" y="246" fill="none" stroke="#29235c" points="230.63,-7207.8 230.63,-7267.8 630.63,-7267.8 630.63,-7207.8 230.63,-7207.8"></rect>
+<text text-anchor="start" x="17" y="285" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">data    </text>
+<text text-anchor="start" x="196" y="284" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)[]</text>
+<rect width="402" height="302" x="5" y="5" fill="none" stroke="#29235c" stroke-width="2" points="229.63,-7206.8 229.63,-7508.8 631.63,-7508.8 631.63,-7206.8 229.63,-7206.8"></rect>
+</g></svg>

@@ -5,16 +5,20 @@
   "type": "module",
   "scripts": {
     "generate": "cross-env SKIP_ENV_VALIDATION=1 node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts && dbml-renderer -i schema.dbml -o ../../docs/img/schema.svg",
+    "extract_groups": "cross-env SKIP_ENV_VALIDATION=1 node --experimental-specifier-resolution=node --loader ts-node/esm ./src/extract_groups.ts",
     "clean": "rm -rf .turbo node_modules",
     "format": "biome format ./src",
     "lint": "biome lint ./src",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@softwaretechnik/dbml-renderer": "1.0.30",
-    "@shirterp/tsconfig": "workspace:*",
     "@shirterp/server": "workspace:^",
+    "@shirterp/tsconfig": "workspace:*",
+    "@softwaretechnik/dbml-renderer": "1.0.30",
+    "@svgdotjs/svg.js": "3.2.4",
+    "@types/svgdom": "^0.1.2",
     "drizzle-dbml-generator": "0.8.0",
+    "svgdom": "^0.1.19",
     "ts-node": "10.9.2",
     "typescript": "5.5.4"
   }

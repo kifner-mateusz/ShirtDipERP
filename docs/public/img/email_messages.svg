@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="459.9999999999999" height="1158.3102431488546"><g id="SvgjsG1007" class="node" x="-1008" y="1504">
+<title x="-1008" y="1504">email_messages</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="1238.08" cy="-924.8" rx="319.72" ry="808.86" x="-1008" y="1504"></ellipse>
+<rect width="447.9999999999999" height="60" x="6" y="9" fill="#1d71b8" stroke="transparent" points="1014.08,-1434.8 1014.08,-1494.8 1462.08,-1494.8 1462.08,-1434.8 1014.08,-1434.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="9" fill="none" stroke="#29235c" points="1014.08,-1434.8 1014.08,-1494.8 1462.08,-1494.8 1462.08,-1434.8 1014.08,-1434.8"></rect>
+<text text-anchor="start" x="48" y="48" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       email_messages       </text>
+<rect width="447.9999999999999" height="60" x="6" y="69" fill="#e7e2dd" stroke="transparent" points="1014.08,-1374.8 1014.08,-1434.8 1462.08,-1434.8 1462.08,-1374.8 1014.08,-1374.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="69" fill="none" stroke="#29235c" points="1014.08,-1374.8 1014.08,-1434.8 1462.08,-1434.8 1462.08,-1374.8 1014.08,-1374.8"></rect>
+<text text-anchor="start" x="17" y="108" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">id</text>
+<text text-anchor="start" x="42" y="108" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="327" y="108" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">serial</text>
+<text text-anchor="start" x="404" y="108" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="413" y="108" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="447.9999999999999" height="60" x="6" y="129" fill="#e7e2dd" stroke="transparent" points="1014.08,-1314.8 1014.08,-1374.8 1462.08,-1374.8 1462.08,-1314.8 1014.08,-1314.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="129" fill="none" stroke="#29235c" points="1014.08,-1314.8 1014.08,-1374.8 1462.08,-1374.8 1462.08,-1314.8 1014.08,-1314.8"></rect>
+<text text-anchor="start" x="17" y="169" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">subject    </text>
+<text text-anchor="start" x="262" y="168" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<rect width="447.9999999999999" height="60" x="6" y="189" fill="#e7e2dd" stroke="transparent" points="1014.08,-1254.8 1014.08,-1314.8 1462.08,-1314.8 1462.08,-1254.8 1014.08,-1254.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="189" fill="none" stroke="#29235c" points="1014.08,-1254.8 1014.08,-1314.8 1462.08,-1314.8 1462.08,-1254.8 1014.08,-1254.8"></rect>
+<text text-anchor="start" x="17" y="229" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">from    </text>
+<text text-anchor="start" x="262" y="228" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<rect width="447.9999999999999" height="60" x="6" y="249" fill="#e7e2dd" stroke="transparent" points="1014.08,-1194.8 1014.08,-1254.8 1462.08,-1254.8 1462.08,-1194.8 1014.08,-1194.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="249" fill="none" stroke="#29235c" points="1014.08,-1194.8 1014.08,-1254.8 1462.08,-1254.8 1462.08,-1194.8 1014.08,-1194.8"></rect>
+<text text-anchor="start" x="17" y="289" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">to    </text>
+<text text-anchor="start" x="262" y="288" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<rect width="447.9999999999999" height="60" x="6" y="309" fill="#e7e2dd" stroke="transparent" points="1014.08,-1134.8 1014.08,-1194.8 1462.08,-1194.8 1462.08,-1134.8 1014.08,-1134.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="309" fill="none" stroke="#29235c" points="1014.08,-1134.8 1014.08,-1194.8 1462.08,-1194.8 1462.08,-1134.8 1014.08,-1134.8"></rect>
+<text text-anchor="start" x="17" y="349" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">date    </text>
+<text text-anchor="start" x="247" y="348" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">timestamp (6)</text>
+<rect width="447.9999999999999" height="60" x="6" y="369" fill="#e7e2dd" stroke="transparent" points="1014.08,-1074.8 1014.08,-1134.8 1462.08,-1134.8 1462.08,-1074.8 1014.08,-1074.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="369" fill="none" stroke="#29235c" points="1014.08,-1074.8 1014.08,-1134.8 1462.08,-1134.8 1462.08,-1074.8 1014.08,-1074.8"></rect>
+<text text-anchor="start" x="17" y="409" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">html    </text>
+<text text-anchor="start" x="391" y="408" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<rect width="447.9999999999999" height="60" x="6" y="429" fill="#e7e2dd" stroke="transparent" points="1014.08,-1014.8 1014.08,-1074.8 1462.08,-1074.8 1462.08,-1014.8 1014.08,-1014.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="429" fill="none" stroke="#29235c" points="1014.08,-1014.8 1014.08,-1074.8 1462.08,-1074.8 1462.08,-1014.8 1014.08,-1014.8"></rect>
+<text text-anchor="start" x="17" y="469" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">text    </text>
+<text text-anchor="start" x="391" y="468" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<rect width="447.9999999999999" height="60" x="6" y="489" fill="#e7e2dd" stroke="transparent" points="1014.08,-954.8 1014.08,-1014.8 1462.08,-1014.8 1462.08,-954.8 1014.08,-954.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="489" fill="none" stroke="#29235c" points="1014.08,-954.8 1014.08,-1014.8 1462.08,-1014.8 1462.08,-954.8 1014.08,-954.8"></rect>
+<text text-anchor="start" x="17" y="529" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">message_id    </text>
+<text text-anchor="start" x="262" y="528" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<rect width="447.9999999999999" height="60" x="6" y="549" fill="#e7e2dd" stroke="transparent" points="1014.08,-894.8 1014.08,-954.8 1462.08,-954.8 1462.08,-894.8 1014.08,-894.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="549" fill="none" stroke="#29235c" points="1014.08,-894.8 1014.08,-954.8 1462.08,-954.8 1462.08,-894.8 1014.08,-894.8"></rect>
+<text text-anchor="start" x="17" y="589" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">message_uid    </text>
+<text text-anchor="start" x="345" y="588" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<rect width="447.9999999999999" height="60" x="6" y="609" fill="#e7e2dd" stroke="transparent" points="1014.08,-834.8 1014.08,-894.8 1462.08,-894.8 1462.08,-834.8 1014.08,-834.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="609" fill="none" stroke="#29235c" points="1014.08,-834.8 1014.08,-894.8 1462.08,-894.8 1462.08,-834.8 1014.08,-834.8"></rect>
+<text text-anchor="start" x="17" y="649" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">mailbox    </text>
+<text text-anchor="start" x="336" y="648" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar</text>
+<rect width="447.9999999999999" height="60" x="6" y="669" fill="#e7e2dd" stroke="transparent" points="1014.08,-774.8 1014.08,-834.8 1462.08,-834.8 1462.08,-774.8 1014.08,-774.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="669" fill="none" stroke="#29235c" points="1014.08,-774.8 1014.08,-834.8 1462.08,-834.8 1462.08,-774.8 1014.08,-774.8"></rect>
+<text text-anchor="start" x="17" y="709" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">client_user    </text>
+<text text-anchor="start" x="336" y="708" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar</text>
+<rect width="447.9999999999999" height="60" x="6" y="729" fill="#e7e2dd" stroke="transparent" points="1014.08,-714.8 1014.08,-774.8 1462.08,-774.8 1462.08,-714.8 1014.08,-714.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="729" fill="none" stroke="#29235c" points="1014.08,-714.8 1014.08,-774.8 1462.08,-774.8 1462.08,-714.8 1014.08,-714.8"></rect>
+<text text-anchor="start" x="17" y="769" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">header_lines    </text>
+<text text-anchor="start" x="319" y="768" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar[]</text>
+<rect width="447.9999999999999" height="60" x="6" y="789" fill="#e7e2dd" stroke="transparent" points="1014.08,-654.8 1014.08,-714.8 1462.08,-714.8 1462.08,-654.8 1014.08,-654.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="789" fill="none" stroke="#29235c" points="1014.08,-654.8 1014.08,-714.8 1462.08,-714.8 1462.08,-654.8 1014.08,-654.8"></rect>
+<text text-anchor="start" x="17" y="829" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">text_as_html    </text>
+<text text-anchor="start" x="391" y="828" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">text</text>
+<rect width="447.9999999999999" height="60" x="6" y="849" fill="#e7e2dd" stroke="transparent" points="1014.08,-594.8 1014.08,-654.8 1462.08,-654.8 1462.08,-594.8 1014.08,-594.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="849" fill="none" stroke="#29235c" points="1014.08,-594.8 1014.08,-654.8 1462.08,-654.8 1462.08,-594.8 1014.08,-594.8"></rect>
+<text text-anchor="start" x="17" y="889" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">message_file_id    </text>
+<text text-anchor="start" x="345" y="888" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<rect width="447.9999999999999" height="60" x="6" y="909" fill="#e7e2dd" stroke="transparent" points="1014.08,-534.8 1014.08,-594.8 1462.08,-594.8 1462.08,-534.8 1014.08,-534.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="909" fill="none" stroke="#29235c" points="1014.08,-534.8 1014.08,-594.8 1462.08,-594.8 1462.08,-534.8 1014.08,-534.8"></rect>
+<text text-anchor="start" x="17" y="949" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">updated_at    </text>
+<text text-anchor="start" x="256" y="948" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">timestamp</text>
+<text text-anchor="start" x="404" y="948" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="413" y="948" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="447.9999999999999" height="59.99999999999994" x="6" y="969" fill="#e7e2dd" stroke="transparent" points="1014.08,-474.8 1014.08,-534.8 1462.08,-534.8 1462.08,-474.8 1014.08,-474.8"></rect>
+<rect width="447.9999999999999" height="59.99999999999994" x="6" y="969" fill="none" stroke="#29235c" points="1014.08,-474.8 1014.08,-534.8 1462.08,-534.8 1462.08,-474.8 1014.08,-474.8"></rect>
+<text text-anchor="start" x="17" y="1009" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">created_at    </text>
+<text text-anchor="start" x="256" y="1008" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">timestamp</text>
+<text text-anchor="start" x="404" y="1008" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="413" y="1008" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="447.9999999999999" height="60" x="6" y="1029" fill="#e7e2dd" stroke="transparent" points="1014.08,-414.8 1014.08,-474.8 1462.08,-474.8 1462.08,-414.8 1014.08,-414.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="1029" fill="none" stroke="#29235c" points="1014.08,-414.8 1014.08,-474.8 1462.08,-474.8 1462.08,-414.8 1014.08,-414.8"></rect>
+<text text-anchor="start" x="17" y="1069" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">created_by_id    </text>
+<text text-anchor="start" x="262" y="1068" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<rect width="447.9999999999999" height="60" x="6" y="1089" fill="#e7e2dd" stroke="transparent" points="1014.08,-354.8 1014.08,-414.8 1462.08,-414.8 1462.08,-354.8 1014.08,-354.8"></rect>
+<rect width="447.9999999999999" height="60" x="6" y="1089" fill="none" stroke="#29235c" points="1014.08,-354.8 1014.08,-414.8 1462.08,-414.8 1462.08,-354.8 1014.08,-354.8"></rect>
+<text text-anchor="start" x="17" y="1129" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">updated_by_id    </text>
+<text text-anchor="start" x="262" y="1128" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<rect width="449.9999999999999" height="1142" x="5" y="8" fill="none" stroke="#29235c" stroke-width="2" points="1013.08,-353.8 1013.08,-1495.8 1463.08,-1495.8 1463.08,-353.8 1013.08,-353.8"></rect>
+</g></svg>

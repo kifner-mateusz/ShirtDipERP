@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="389" height="190.01410820452855"><g id="SvgjsG1017" class="node" x="-236" y="5600">
+<title x="-236" y="5600">orders_to_users</title>
+<ellipse fill="none" stroke="black" stroke-width="0" cx="430.63" cy="-5504.8" rx="269.32" ry="130.22" x="-236" y="5600"></ellipse>
+<rect width="377" height="60" x="7" y="5" fill="#1d71b8" stroke="transparent" points="242.63,-5534.8 242.63,-5594.8 619.63,-5594.8 619.63,-5534.8 242.63,-5534.8"></rect>
+<rect width="377" height="60" x="7" y="5" fill="none" stroke="#29235c" points="242.63,-5534.8 242.63,-5594.8 619.63,-5594.8 619.63,-5534.8 242.63,-5534.8"></rect>
+<text text-anchor="start" x="17" y="44" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff">       orders_to_users       </text>
+<rect width="377" height="60" x="7" y="65" fill="#e7e2dd" stroke="transparent" points="242.63,-5474.8 242.63,-5534.8 619.63,-5534.8 619.63,-5474.8 242.63,-5474.8"></rect>
+<rect width="377" height="60" x="7" y="65" fill="none" stroke="#29235c" points="242.63,-5474.8 242.63,-5534.8 619.63,-5534.8 619.63,-5474.8 242.63,-5474.8"></rect>
+<text text-anchor="start" x="18" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">order_id</text>
+<text text-anchor="start" x="135" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="236" y="104" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">integer</text>
+<text text-anchor="start" x="333" y="104" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="342" y="104" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="377" height="60" x="7" y="125" fill="#e7e2dd" stroke="transparent" points="242.63,-5414.8 242.63,-5474.8 619.63,-5474.8 619.63,-5414.8 242.63,-5414.8"></rect>
+<rect width="377" height="60" x="7" y="125" fill="none" stroke="#29235c" points="242.63,-5414.8 242.63,-5474.8 619.63,-5474.8 619.63,-5414.8 242.63,-5414.8"></rect>
+<text text-anchor="start" x="18" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">userId</text>
+<text text-anchor="start" x="106" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">    </text>
+<text text-anchor="start" x="152" y="164" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
+<text text-anchor="start" x="333" y="164" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c"> </text>
+<text text-anchor="start" x="342" y="164" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">(!)</text>
+<rect width="379" height="182" x="5" y="4" fill="none" stroke="#29235c" stroke-width="2" points="241.13,-5413.8 241.13,-5595.8 620.13,-5595.8 620.13,-5413.8 241.13,-5413.8"></rect>
+</g></svg>
