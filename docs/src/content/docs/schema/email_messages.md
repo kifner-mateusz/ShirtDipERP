@@ -2,12 +2,11 @@
 title: email_messages
 ---
 
-![email_messages erd schema](/img/schema/email_messages.svg)
+# email_messages
 
+![Schema Image](/img/schema/email_messages.svg)
 
-#  email_messages
-
-### id serial (!)
+### id serial
 TODO: add description here
 
 ### subject varchar(255)
@@ -19,7 +18,7 @@ TODO: add description here
 ### to varchar(255)
 TODO: add description here
 
-### date timestamp (6)
+### date "timestamp
 TODO: add description here
 
 ### html text
@@ -47,12 +46,12 @@ TODO: add description here
 TODO: add description here
 
 ### message_file_id integer
+Related to files.id
+
+### updated_at timestamp
 TODO: add description here
 
-### updated_at timestamp (!)
-TODO: add description here
-
-### created_at timestamp (!)
+### created_at timestamp
 TODO: add description here
 
 ### created_by_id varchar(255)
@@ -62,4 +61,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.384Z_
+_Last modified: 2024-08-12T14:21:09.552Z_

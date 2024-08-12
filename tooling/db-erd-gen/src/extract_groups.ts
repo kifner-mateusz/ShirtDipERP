@@ -125,7 +125,7 @@ function extractGroups(svgFilePath: string, outputDir: string) {
       ) + 4;
     rect_width += 12;
 
-    groupSvg.size(rect_width, rect_height);
+    groupSvg.size(rect_width / 2, rect_height / 2);
 
     for (const element of groupSvg.find("*")) {
       const x = element.attr("x");
@@ -139,12 +139,9 @@ function extractGroups(svgFilePath: string, outputDir: string) {
       }
     }
 
-    // const c_group = groupSvg.findOne("g");
+    const c_group = groupSvg.findOne("g");
 
-    // c_group?.attr(
-    //   "transform",
-    //   `translate(${(-x_offset + width / 2).toFixed(2)}, ${(-y_offset + height / 2).toFixed(2)})`,
-    // );
+    c_group?.attr("transform", "scale(0.5)");
 
     // Get the SVG string for the group
     const groupSvgData = groupSvg.svg();

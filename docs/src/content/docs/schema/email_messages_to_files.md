@@ -2,16 +2,21 @@
 title: email_messages_to_files
 ---
 
-![email_messages_to_files erd schema](/img/schema/email_messages_to_files.svg)
+# email_messages_to_files
 
+![Schema Image](/img/schema/email_messages_to_files.svg)
 
-#  email_messages_to_files
+### email_messages_id integer
+Related to email_messages.id
 
-### email_messages_id integer (!)
+### file_id integer
+Related to files.id
+
+### indexes {
 TODO: add description here
 
-### file_id integer (!)
+### (email_messages_id, file_id)
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.395Z_
+_Last modified: 2024-08-12T14:21:09.552Z_

@@ -2,12 +2,11 @@
 title: addresses
 ---
 
-![addresses erd schema](/img/schema/addresses.svg)
+# addresses
 
+![Schema Image](/img/schema/addresses.svg)
 
-#  addresses
-
-### id serial (!)
+### id serial
 TODO: add description here
 
 ### street_name varchar(255)
@@ -32,4 +31,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.304Z_
+_Last modified: 2024-08-12T14:21:09.544Z_

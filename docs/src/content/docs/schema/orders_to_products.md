@@ -2,16 +2,21 @@
 title: orders_to_products
 ---
 
-![orders_to_products erd schema](/img/schema/orders_to_products.svg)
+# orders_to_products
 
+![Schema Image](/img/schema/orders_to_products.svg)
 
-#  orders_to_products
+### order_id integer
+Related to orders.id
 
-### order_id integer (!)
+### product_id integer
+Related to products.id
+
+### indexes {
 TODO: add description here
 
-### product_id integer (!)
+### (order_id, product_id)
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.497Z_
+_Last modified: 2024-08-12T14:21:09.555Z_

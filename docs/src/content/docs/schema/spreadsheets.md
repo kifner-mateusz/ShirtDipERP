@@ -2,12 +2,11 @@
 title: spreadsheets
 ---
 
-![spreadsheets erd schema](/img/schema/spreadsheets.svg)
+# spreadsheets
 
+![Schema Image](/img/schema/spreadsheets.svg)
 
-#  spreadsheets
-
-### id serial (!)
+### id serial
 TODO: add description here
 
 ### name varchar(255)
@@ -17,12 +16,12 @@ TODO: add description here
 TODO: add description here
 
 ### order_id integer
+Related to orders.id
+
+### updated_at timestamp
 TODO: add description here
 
-### updated_at timestamp (!)
-TODO: add description here
-
-### created_at timestamp (!)
+### created_at timestamp
 TODO: add description here
 
 ### created_by_id varchar(255)
@@ -32,4 +31,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.566Z_
+_Last modified: 2024-08-12T14:21:09.557Z_

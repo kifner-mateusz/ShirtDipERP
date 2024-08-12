@@ -1,90 +1,70 @@
 import * as fs from "fs";
 import * as path from "path";
-import { createSVGWindow } from "svgdom";
-import { type List, SVG, type Text, registerWindow } from "@svgdotjs/svg.js";
 
-function processSvg(svgContent: string, svgFilename: string) {
-  const window = createSVGWindow();
-  const document = window.document;
-  registerWindow(window, document);
+function processDbml(dbmlContent: string) {
+  const tableRegex = /table\s+(\w+)\s+\{([\s\S]*?)\}/g;
+  const relationRegex = /ref:\s+(\w+)\.(\w+)\s*>\s*(\w+)\.(\w+)/g;
+  const relations: { [key: string]: string } = {};
 
-  const draw = SVG(document).svg(svgContent);
-  let texts: string[] = [];
-
-  // Extract all text elements, trim them, and store them in the texts array
-  for (const textElement of draw.find("text") as List<Text>) {
-    const textContent = textElement.text().trim();
-    if (textContent) {
-      texts.push(textContent);
-    }
+  // Extract relations from the DBML content
+  let relationMatch: RegExpExecArray | null;
+  // @ts-ignore
+  // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
+  while ((relationMatch = relationRegex.exec(dbmlContent)) !== null) {
+    const table1 = relationMatch[1];
+    const column1 = relationMatch[2];
+    const table2 = relationMatch[3];
+    const column2 = relationMatch[4];
+    relations[`${table1}.${column1}`] = `Related to ${table2}.${column2}`;
   }
 
-  const new_texts: string[] = [""];
+  let match: RegExpExecArray | null;
 
-  let second = true;
-  for (const text of texts) {
-    if (text === "(!)") {
-      new_texts[new_texts.length - 1] += ` ${text}`;
-      second = false;
-    } else if (second) {
-      new_texts[new_texts.length - 1] += ` ${text}`;
-      second = false;
-    } else {
-      new_texts.push(text);
-      second = true;
-    }
-  }
+  // biome-ignore lint/suspicious/noAssignInExpressions: <explanation>
+  while ((match = tableRegex.exec(dbmlContent)) !== null) {
+    const tableName = match[1];
+    const elementsBlock = match[2];
+    const title = tableName;
+    const outputDir = "../../docs/src/content/docs/schema";
+    const outputFilePath = path.join(outputDir, `${tableName}.md`);
+    const lastModified = new Date().toISOString();
 
-  texts = new_texts;
-
-  // Prepare the title and header from the filename
-  const title = path.basename(svgFilename, path.extname(svgFilename));
-  const svgEmbedded = draw.svg(); // Get the embedded SVG content
-  const lastModified = new Date().toISOString(); // Get current date and time
-
-  // Create the markdown content
-  let mdContent = `---
+    let mdContent = `---
 title: ${title}
 ---
 
-![${title} erd schema](/img/schema/${title}.svg)
+# ${title}
 
+![Schema Image](/img/schema/${tableName}.svg)
 
 `;
-  let i = 0;
-  for (const text of texts) {
-    if (i === 0) {
-      mdContent += `# ${text}\n\n`;
-      i++;
-      continue;
+    if (elementsBlock === undefined) continue;
+
+    const lines = elementsBlock.split("\n");
+    for (const line of lines) {
+      const line_split = line.trim().split(" ");
+      const elementName = line_split[0];
+      if (elementName === "") continue;
+      const elementType = line_split[1];
+      const relation =
+        relations[`${tableName}.${elementName}`] ||
+        "TODO: add description here";
+      mdContent += `### ${elementName} ${elementType}\n${relation}\n\n`;
     }
-    mdContent += `### ${text}\nTODO: add description here\n\n`;
+
+    mdContent += `\n_Last modified: ${lastModified}_\n`;
+
+    if (!fs.existsSync(outputDir)) {
+      fs.mkdirSync(outputDir, { recursive: true });
+    }
+
+    fs.writeFileSync(outputFilePath, mdContent, "utf8");
   }
 
-  mdContent += `\n_Last modified: ${lastModified}_\n`;
-
-  // Define the output file path
-  const outputDir = "../../docs/src/content/docs/schema";
-
-  const outputFilePath = path.join(outputDir, `${title}.md`);
-
-  // Ensure the directory exists
-  if (!fs.existsSync(outputDir)) {
-    fs.mkdirSync(outputDir, { recursive: true });
-  }
-
-  // Write the markdown content to the file
-  fs.writeFileSync(outputFilePath, mdContent, "utf8");
-
-  console.log(`Markdown file created at: ${outputFilePath}`);
+  console.log("Markdown files created.");
 }
 
-// Example usage
-const svgPath = "../../docs/public/img/schema"; // Replace with your SVG file path
+const dbmlFilePath = "./schema.dbml";
+const dbmlContent = fs.readFileSync(dbmlFilePath, "utf8");
 
-for (const file of fs.readdirSync(svgPath)) {
-  const filepath = path.join(svgPath, file);
-  if (!fs.statSync(filepath).isFile()) continue;
-  const svgContent = fs.readFileSync(filepath, "utf8");
-  processSvg(svgContent, path.basename(filepath));
-}
+processDbml(dbmlContent);

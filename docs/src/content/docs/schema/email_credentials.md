@@ -2,18 +2,17 @@
 title: email_credentials
 ---
 
-![email_credentials erd schema](/img/schema/email_credentials.svg)
+# email_credentials
 
+![Schema Image](/img/schema/email_credentials.svg)
 
-#  email_credentials
-
-### id serial (!)
+### id serial
 TODO: add description here
 
 ### host varchar(255)
 TODO: add description here
 
-### port integer (!)
+### port integer
 TODO: add description here
 
 ### user varchar(255)
@@ -28,10 +27,10 @@ TODO: add description here
 ### boolean boolean
 TODO: add description here
 
-### updated_at timestamp (!)
+### updated_at timestamp
 TODO: add description here
 
-### created_at timestamp (!)
+### created_at timestamp
 TODO: add description here
 
 ### created_by_id varchar(255)
@@ -41,4 +40,4 @@ TODO: add description here
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.339Z_
+_Last modified: 2024-08-12T14:21:09.550Z_

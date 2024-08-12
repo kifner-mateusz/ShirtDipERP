@@ -2,22 +2,21 @@
 title: global_properties
 ---
 
-![global_properties erd schema](/img/schema/global_properties.svg)
+# global_properties
 
+![Schema Image](/img/schema/global_properties.svg)
 
-#  global_properties
-
-### id serial (!)
+### id serial
 TODO: add description here
 
-### category varchar(255) (!)
+### category varchar(255)
 TODO: add description here
 
-### name varchar(255) (!)
+### name varchar(255)
 TODO: add description here
 
-### data varchar(255)[]
+### data "varchar(255)[]"
 TODO: add description here
 
 
-_Last modified: 2024-08-12T11:55:08.446Z_
+_Last modified: 2024-08-12T14:21:09.553Z_
