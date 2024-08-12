@@ -160,6 +160,6 @@ function extractGroups(svgFilePath: string, outputDir: string) {
 }
 
 const svgFilePath = "../../docs/public/img/schema.svg"; // Replace with your SVG file path
-const outputDir = "../../docs/public/img/"; // Replace with your desired output directory
+const outputDir = "../../docs/public/img/schema"; // Replace with your desired output directory
 
 extractGroups(svgFilePath, outputDir);
