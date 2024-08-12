@@ -1,9 +1,9 @@
 ---
-title: tyfons_lab_access_tokens
+title: access_tokens
 ---
 
 
-![Schema Image](/img/schema/tyfons_lab_access_tokens.svg)
+![Schema Image](/img/schema/access_tokens.svg)
 
 ### id text
 TODO: add description here
@@ -17,5 +17,3 @@ TODO: add description here
 ### expiration_date "timestamp
 TODO: add description here
 
-
-_Last modified: 2024-08-12T14:27:10.816Z_

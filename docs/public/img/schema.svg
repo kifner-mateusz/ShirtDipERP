@@ -73,13 +73,13 @@
 <text text-anchor="start" x="2979.7" y="-3980" font-family="Helvetica,sans-Serif" font-style="italic" font-size="32.00" fill="#29235c">varchar(255)</text>
 <polygon fill="none" stroke="#29235c" stroke-width="2" points="2663.04,-3957.8 2663.04,-4499.8 3173.04,-4499.8 3173.04,-3957.8 2663.04,-3957.8"/>
 </g>
-<!-- tyfons_lab_access_tokens -->
-<g id="tyfons_lab_access_tokens" class="node">
-<title>tyfons_lab_access_tokens</title>
+<!-- access_tokens -->
+<g id="access_tokens" class="node">
+<title>access_tokens</title>
 <ellipse fill="none" stroke="black" stroke-width="0" cx="2067.46" cy="-5723.8" rx="452.6" ry="214.92"/>
 <polygon fill="#1d71b8" stroke="transparent" points="1749.46,-5813.8 1749.46,-5873.8 2385.46,-5873.8 2385.46,-5813.8 1749.46,-5813.8"/>
 <polygon fill="none" stroke="#29235c" points="1749.46,-5813.8 1749.46,-5873.8 2385.46,-5873.8 2385.46,-5813.8 1749.46,-5813.8"/>
-<text text-anchor="start" x="1817.58" y="-5835" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;tyfons_lab_access_tokens &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="1899.39" y="-5835" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;access_tokens &#160;&#160;&#160;&#160;&#160;&#160;</text>
 <polygon fill="#e7e2dd" stroke="transparent" points="1749.46,-5753.8 1749.46,-5813.8 2385.46,-5813.8 2385.46,-5753.8 1749.46,-5753.8"/>
 <polygon fill="none" stroke="#29235c" points="1749.46,-5753.8 1749.46,-5813.8 2385.46,-5813.8 2385.46,-5753.8 1749.46,-5753.8"/>
 <text text-anchor="start" x="1760.46" y="-5775" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">id</text>
@@ -1009,13 +1009,13 @@
 <text text-anchor="middle" x="1021.98" y="-5755" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">1</text>
 <text text-anchor="middle" x="611.73" y="-5454.4" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">1</text>
 </g>
-<!-- tyfons_lab_session -->
-<g id="tyfons_lab_session" class="node">
-<title>tyfons_lab_session</title>
+<!-- session -->
+<g id="session" class="node">
+<title>session</title>
 <ellipse fill="none" stroke="black" stroke-width="0" cx="430.63" cy="-7762.8" rx="430.76" ry="172.57"/>
 <polygon fill="#1d71b8" stroke="transparent" points="128.63,-7822.8 128.63,-7882.8 733.63,-7882.8 733.63,-7822.8 128.63,-7822.8"/>
 <polygon fill="none" stroke="#29235c" points="128.63,-7822.8 128.63,-7882.8 733.63,-7882.8 733.63,-7822.8 128.63,-7822.8"/>
-<text text-anchor="start" x="232.84" y="-7844" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;tyfons_lab_session &#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="314.64" y="-7844" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#ffffff"> &#160;&#160;&#160;&#160;&#160;&#160;session &#160;&#160;&#160;&#160;&#160;&#160;</text>
 <polygon fill="#e7e2dd" stroke="transparent" points="128.63,-7762.8 128.63,-7822.8 733.63,-7822.8 733.63,-7762.8 128.63,-7762.8"/>
 <polygon fill="none" stroke="#29235c" points="128.63,-7762.8 128.63,-7822.8 733.63,-7822.8 733.63,-7762.8 128.63,-7762.8"/>
 <text text-anchor="start" x="139.63" y="-7784" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="32.00" fill="#29235c">id</text>
@@ -1099,10 +1099,10 @@
 <title>user:e&#45;&gt;role:w</title>
 <path fill="none" stroke="#29235c" stroke-width="3" d="M1463.08,-5483.8C1680.06,-5483.8 1502.36,-5762.29 1614.91,-5947.8 1725.85,-6130.66 1737.57,-6291.8 1951.46,-6291.8"/>
 </g>
-<!-- user&#45;&gt;tyfons_lab_access_tokens -->
-<!-- user&#45;&gt;tyfons_lab_access_tokens -->
+<!-- user&#45;&gt;access_tokens -->
+<!-- user&#45;&gt;access_tokens -->
 <g id="edge36" class="edge">
-<title>user:e&#45;&gt;tyfons_lab_access_tokens:w</title>
+<title>user:e&#45;&gt;access_tokens:w</title>
 <path fill="none" stroke="#29235c" stroke-width="3" d="M1463.08,-5363.8C1685.23,-5363.8 1527.87,-5770.78 1738.16,-5783.5"/>
 <polygon fill="#29235c" stroke="#29235c" stroke-width="3" points="1738.36,-5787 1748.46,-5783.8 1738.56,-5780.01 1738.36,-5787"/>
 <text text-anchor="middle" x="1739.56" y="-5793.4" font-family="Helvetica,sans-Serif" font-size="32.00" fill="#29235c">1</text>

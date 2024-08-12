@@ -4,13 +4,14 @@
   "version": "1.3.0",
   "type": "module",
   "scripts": {
-    "generate": "cross-env SKIP_ENV_VALIDATION=1 node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts && dbml-renderer -i schema.dbml -o ../../docs/public/img/schema.svg",
-    "extract_groups": "cross-env SKIP_ENV_VALIDATION=1 node --experimental-specifier-resolution=node --loader ts-node/esm ./src/extract_groups.ts",
-    "gen_docs": "cross-env SKIP_ENV_VALIDATION=1 node --experimental-specifier-resolution=node --loader ts-node/esm ./src/generate_docs_entries.ts",
+    "generate": "pnpm with-env node --experimental-specifier-resolution=node --loader ts-node/esm ./src/index.ts &&  dbml-renderer -i schema.dbml -o ../../docs/public/img/schema.svg",
+    "extract_groups": "pnpm with-env  node --experimental-specifier-resolution=node --loader ts-node/esm ./src/extract_groups.ts",
+    "gen_docs": "pnpm with-env  node --experimental-specifier-resolution=node --loader ts-node/esm ./src/generate_docs_entries.ts",
     "clean": "rm -rf .turbo node_modules",
     "format": "biome format ./src",
     "lint": "biome lint ./src",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ./.env --"
   },
   "devDependencies": {
     "@shirterp/server": "workspace:^",

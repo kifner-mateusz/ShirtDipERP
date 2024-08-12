@@ -16,7 +16,7 @@ table addresses {
   province varchar(255) [default: 'pomorskie']
 }
 
-table tyfons_lab_access_tokens {
+table access_tokens {
   id text [pk, not null]
   user_id text [not null]
   token varchar(30) [not null]
@@ -206,7 +206,7 @@ table products {
   updated_by_id varchar(255)
 }
 
-table tyfons_lab_session {
+table session {
   id text [pk, not null]
   user_id text [not null]
   expires_at "timestamp with time zone" [not null]
@@ -272,4 +272,4 @@ ref: orders_to_users.userId - user.id
 
 ref: spreadsheets.order_id > orders.id
 
-ref: user.wsTokenId - tyfons_lab_access_tokens.id
+ref: user.wsTokenId - access_tokens.id
