@@ -44,14 +44,13 @@ title: ${title}
       const line_split = line.trim().split(" ");
       const elementName = line_split[0];
       if (elementName === "") continue;
+      if (elementName === "indexes") break;
       const elementType = line_split[1];
       const relation =
         relations[`${tableName}.${elementName}`] ||
         "TODO: add description here";
       mdContent += `### ${elementName} ${elementType}\n${relation}\n\n`;
     }
-
-    mdContent += `\n_Last modified: ${lastModified}_\n`;
 
     if (!fs.existsSync(outputDir)) {
       fs.mkdirSync(outputDir, { recursive: true });
