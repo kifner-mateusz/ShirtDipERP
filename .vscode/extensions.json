@@ -4,6 +4,7 @@
     "streetsidesoftware.code-spell-checker-polish",
     "biomejs.biome",
     "bradlc.vscode-tailwindcss",
-    "humao.rest-client"
+    "humao.rest-client",
+    "astro-build.astro-vscode"
   ]
 }
