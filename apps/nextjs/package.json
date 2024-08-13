@@ -16,7 +16,7 @@
   "dependencies": {
     "@ericblade/quagga2": "1.8.4",
     "@img/sharp-wasm32": "0.33.4",
-    "@mantine/hooks": "7.12.0",
+    "@mantine/hooks": "7.12.1",
     "@shirterp/server": "workspace:*",
     "@shirterp/email-templates": "workspace:*",
     "@shirterp/ui-web": "workspace:*",
