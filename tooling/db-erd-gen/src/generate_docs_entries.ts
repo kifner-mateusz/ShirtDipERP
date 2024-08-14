@@ -25,6 +25,7 @@ function processDbml(dbmlContent: string) {
     const tableName = match[1];
     const elementsBlock = match[2];
     const title = tableName;
+    if (tableName?.includes("_to_")) continue;
     const outputDir = "../../docs/src/content/docs/schema";
     const outputFilePath = path.join(outputDir, `${tableName}.md`);
     const lastModified = new Date().toISOString();
@@ -45,6 +46,7 @@ title: ${title}
       const elementName = line_split[0];
       if (elementName === "") continue;
       if (elementName === "indexes") break;
+
       const elementType = line_split[1];
       const relation =
         relations[`${tableName}.${elementName}`] ||
