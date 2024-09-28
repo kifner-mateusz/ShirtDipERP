@@ -48,13 +48,3 @@ dist/
 
 /.vscode
 /.swc
-
-uploads/*
-!uploads/.gitkeep
-
-cache/*
-cache/email/*
-!cache/email
-!cache/email/.gitkeep
-tsconfig.tsbuildinfo
-targets.list

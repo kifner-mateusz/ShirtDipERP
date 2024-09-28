@@ -1,8 +1,7 @@
 {
   "cSpell.words": [
     "AABB",
-    "CLAMAV",
-    "clamscan",
+    "biomejs",
     "cmdk",
     "embla",
     "firstname",
@@ -26,6 +25,7 @@
     "tiptap",
     "tsbuildinfo",
     "tsconfigs",
+    "typecheck",
     "vaul"
   ],
   "typescript.preferences.autoImportFileExcludePatterns": ["@radix-ui/*"],
